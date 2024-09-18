@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+*, html {
+    scroll-behavior: smooth;
     font-family: "Inter", sans-serif;
 }
 
@@ -12,10 +16,6 @@ body, html {
     padding: 0;
     height: 100%;
     width: 100%;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -383,9 +383,14 @@ section {
 .skills-icons {
     height: 6rem;
     width: 6rem;
+    transition: transform 0.3s ease;
 }
 
-#info {
+.skills-icons:hover {
+    transform: scale(1.10);
+}
+
+#contato {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -394,8 +399,6 @@ section {
     align-items: center;
     gap: 0.625rem;
     background: #EDEDED;
-    font-family: "Inter", sans-serif;
-    color: #121212;
 }
 
 .info-content {
@@ -482,6 +485,29 @@ footer {
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     font-weight: 300;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 3rem;
+    right: 1.875rem;
+    padding: 0.25rem 0.625rem;
+    background: #FAFAFA;
+    border-radius: 15%;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+#arrow-up {
+    fill: #121212;
+}
+
+.scrollTop:hover {
+    background-color: #121212;
+}
+
+.scrollTop:hover #arrow-up {
+    fill: #FAFAFA;
 }
 
 .hidden {

@@ -9,3 +9,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+function scrollToTop() {
+    window.scrollTo(0, 0);
+}
