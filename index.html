@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matheus Adriel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="icon" href="./assets/icons/favicon.png" />
@@ -13,204 +15,155 @@
     <header>
       <nav class="navbar">
         <div class="navbar-elements">
-          <a class="navbar-anchor" href="#sobre">Sobre</a>
-          <a class="navbar-anchor" href="#projetos">Projetos</a>
-          <a href="index.html">
-            <img src="./assets/icons/Logo.svg" alt="Logo" />
+          <a href="#">
+            <img src="./assets/icons/Logo.svg" alt="Logo" id="logo" />
           </a>
-          <a class="navbar-anchor" href="#skills">Skills</a>
-          <a class="navbar-anchor" href="#contato">Contato</a>
+          <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
-      <section id="welcome">
-        <div class="welcome-container">
-          <div class="welcome-content">
-            <div class="welcome-texts">
-              <h1 id="welcome-title">bem-vindo!</h1>
-              <h2 id="welcome-subtitle">
-                Lorem ipsum dolor sit amet consectetur. Molestie cursus
-                ultricies ac morbi sagittis ultricies donec lobortis sit.
-              </h2>
-            </div>
-            <img src="./assets/icons/bw11_star.svg" alt="" />
-          </div>
-        </div>
-      </section>
-
       <section id="sobre">
         <div class="about-container">
           <div class="about-content">
-            <div class="about-title">
-              <h1 id="about-title" class="hidden">Matheus Adriel</h1>
-              <h3 id="about-subtitle" class="hidden">SOFTWARE DEVELOPER</h3>
+            <div class="about-title no-select">
+              <h1 id="about-title">Matheus</h1>
+              <h1 id="about-title">Adriel</h1>
+              <h3 id="about-subtitle">Software Developer</h3>
             </div>
-            <p id="about-description" class="hidden">
-              Lorem ipsum dolor sit amet consectetur. Mattis eu purus morbi
-              donec dignissim felis scelerisque. Hac porta nulla at nunc enim
-              eleifend. Ornare suspendisse volutpat arcu scelerisque fermentum.
-              Ut enim hac est lacus aliquam ut.
+            <p id="about-description">
+              Matheus Adriel, 25 anos, desenvolvedor com experiência tanto em front quanto em back-end, além de um forte background em design. Combino
+              habilidades técnicas e criativas no desenvolvimento de sistemas robustos e funcionais, focados em oferecer experiências memoráveis.
             </p>
           </div>
           <div class="about-avatar">
-            <img
-              id="profile-star"
-              class="hidden"
-              src="./assets/icons/bw02_star.svg"
-              alt=""
-            />
-            <img
-              id="profile-picture"
-              class="hidden"
-              src="./assets/img/1723241814651.jpg"
-              alt=""
-            />
+            <img id="profile-star" class="autoRotate" src="./assets/icons/bw02_star.svg" alt="" />
           </div>
         </div>
       </section>
 
-      <section id="projetos">
-        <div class="projects-content">
-          <div class="projects-title">
-            <h1 id="projects-title" class="hidden">projetos</h1>
-            <p id="projects-description" class="hidden">
-              Lorem ipsum dolor sit amet consectetur. Molestie cursus ultricies
-              ac morbi sagittis ultricies donec lobortis sit.
-            </p>
-          </div>
-          <div class="projects-info">
-            <div class="projects-info-highlight">
-              <div class="info-highlight-slide">
-                <img
-                  id="left-arrow"
-                  class="hidden"
-                  src="./assets/icons/chevron_left_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <div class="highlight-slide-project hidden">
-                  <div class="slide-project-avatarframe hidden">
-                    <img
-                      id="img-highlight"
-                      class="hidden"
-                      src="./assets/img/projeto-194812.jpg"
-                      alt=""
-                    />
-                    <img
-                      id="highlight-star"
-                      class="hidden"
-                      src="./assets/icons/bw11_star.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide-project-text">
-                    <h3 id="slide-title" class="hidden">CodeLearner</h3>
-                    <p id="slide-subtitle" class="hidden">
-                      Um aplicativo móvel gamificado para aprender a programar.
-                      Oferece lições interativas e desafios diários para ajudar
-                      iniciantes a aprender linguagens como Python, JavaScript e
-                      C++. Os usuários ganham pontos e desbloqueiam conquistas
-                      conforme avançam, mantendo o aprendizado divertido e
-                      motivador.
-                    </p>
-                  </div>
-                </div>
-                <img
-                  id="right-arrow"
-                  class="hidden"
-                  src="./assets/icons/chevron_right_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="projects-info-gallery">
-              <p id="seeall" class="hidden">Ver todos</p>
-              <div class="info-gallery-frames">
-                <div id="frame01" class="frame-model hidden">
-                  <img
-                    id="img-projeto01"
-                    src="./assets/img/projeto-194812.jpg"
-                    alt=""
-                  />
-                  <h3 class="text-projeto">CodeLearner</h3>
-                </div>
-                <div id="frame02" class="frame-model hidden">
-                  <img
-                    id="img-projeto02"
-                    src="./assets/img/projeto-210607.jpg"
-                    alt=""
-                  />
-                  <h3 class="text-projeto">DataVisHub</h3>
-                </div>
-                <div id="frame03" class="frame-model hidden">
-                  <img
-                    id="img-projeto03"
-                    src="./assets/img/projeto-730568.jpg"
-                    alt=""
-                  />
-                  <h3 class="text-projeto">SecurePay</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div class="background"></div>
 
       <section id="skills">
-        <div class="skills-content hidden">
-          <div class="skills-content-text hidden">
-            <h1 id="skills-title" class="hidden">skills</h1>
-            <p id="skills-subtitle" class="hidden">
-              Lorem ipsum dolor sit amet consectetur. Molestie cursus ultricies
-              ac morbi sagittis ultricies donec lobortis sit.
-            </p>
+        <div class="skills-content">
+          <div class="skills-content-text no-select">
+            <h1 id="skills-title">Habilidades</h1>
+            <p id="skills-subtitle">Principais tecnologias e competências técnicas</p>
           </div>
-          <div class="skills-content-icons hidden">
-            <img
-              class="skills-icons"
-              src="./assets/icons/java.svg"
-              alt="Java"
-            />
-            <img
-              class="skills-icons"
-              src="./assets/icons/javascript.svg"
-              alt="Javascript"
-            />
-            <img
-              class="skills-icons"
-              src="./assets/icons/html.svg"
-              alt="HTML"
-            />
-            <img class="skills-icons" src="./assets/icons/css.svg" alt="CSS" />
-            <img
-              class="skills-icons"
-              src="./assets/icons/uxui.svg"
-              alt="UX/UI"
-            />
+          <div class="skills-content-icons">
+            <img class="skills-icons java" src="./assets/icons/java.svg" alt="Java" />
+            <img class="skills-icons javascript" src="./assets/icons/javascript.svg" alt="Javascript" />
+            <img class="skills-icons html" src="./assets/icons/html.svg" alt="HTML" />
+            <img class="skills-icons css" src="./assets/icons/css.svg" alt="CSS" />
+            <img class="skills-icons uxui" src="./assets/icons/uxui.svg" alt="UX/UI" />
           </div>
         </div>
       </section>
 
+      <div class="container-title">
+        <div class="projetos-title no-select">
+          <h1 id="skills-title">Projetos</h1>
+          <p id="skills-subtitle">Aplicações desenvolvidas</p>
+        </div>
+        <a href="#" class="vermais material-symbols-outlined">add</a>
+      </div>
+
+      <div id="projetos">
+        <div class="container swiper">
+          <div class="card-wrapper">
+            <div class="card-list swiper-wrapper">
+              <div class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
+                  <div class="card-content">
+                    <div class="badges">
+                      <p class="badge" id="html-badge">HTML</p>
+                      <p class="badge" id="css-badge">CSS</p>
+                    </div>
+                    <h2 class="card-title">Portfólio</h2>
+                    <button class="card-button material-symbols-outlined">arrow_forward</button>
+                  </div>
+                </a>
+              </div>
+              <div class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
+                  <div class="card-content">
+                    <div class="badges">
+                      <p class="badge" id="html-badge">HTML</p>
+                      <p class="badge" id="css-badge">CSS</p>
+                    </div>
+                    <h2 class="card-title">Portfólio</h2>
+                    <button class="card-button material-symbols-outlined">arrow_forward</button>
+                  </div>
+                </a>
+              </div>
+              <div class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
+                  <div class="card-content">
+                    <div class="badges">
+                      <p class="badge" id="html-badge">HTML</p>
+                      <p class="badge" id="css-badge">CSS</p>
+                    </div>
+                    <h2 class="card-title">Portfólio</h2>
+                    <button class="card-button material-symbols-outlined">arrow_forward</button>
+                  </div>
+                </a>
+              </div>
+              <div class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
+                  <div class="card-content">
+                    <div class="badges">
+                      <p class="badge" id="html-badge">HTML</p>
+                      <p class="badge" id="css-badge">CSS</p>
+                    </div>
+                    <h2 class="card-title">Portfólio</h2>
+                    <button class="card-button material-symbols-outlined">arrow_forward</button>
+                  </div>
+                </a>
+              </div>
+              <div class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
+                  <div class="card-content">
+                    <div class="badges">
+                      <p class="badge" id="html-badge">HTML</p>
+                      <p class="badge" id="css-badge">CSS</p>
+                    </div>
+                    <h2 class="card-title">Portfólio</h2>
+                    <button class="card-button material-symbols-outlined">arrow_forward</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+
       <div id="contato">
-        <div class="info-content hidden">
+        <div class="info-content">
           <div class="info-content-contact">
             <p id="contact-text">CONTATO</p>
             <div class="content-contact-contacts">
               <p id="contact-phone">+55 (19) 99723-2710</p>
               <p>
-                <a href="mailto:matheusadrieldsc@gmail.com" id="contact-mail">
-                  matheusadrieldsc@gmail.com
-                </a>
+                <a href="mailto:matheusadrieldsc@gmail.com" id="contact-mail"> matheusadrieldsc@gmail.com </a>
               </p>
             </div>
           </div>
           <div class="info-content-social">
             <p id="social-text">SOCIAL</p>
             <div class="content-social-icons">
-              <a
-                href="https://wa.me/5519997232710?text=Olá!%20Estou%20interessado(a)%20nos%20seus%20serviços."
-              >
+              <a href="https://wa.me/5519997232710?text=Olá!%20Estou%20interessado(a)%20nos%20seus%20serviços.">
                 <img src="./assets/icons/whatsapp.svg" alt="" />
               </a>
               <a href="https://github.com/matheusadriel2">
@@ -230,24 +183,12 @@
 
     <footer>
       <div id="copy">
-        <!-- <img src="./assets/icons/Logo.svg" alt="" /> -->
         <p id="copy-text">Matheus Adriel © 2024</p>
       </div>
     </footer>
 
-    <div onclick="scrollToTop()" class="scrollTop">
-      <svg
-        id="arrow-up"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-      >
-        <path d="M12 10.8L7.4 15.4L6 14L12 8L18 14L16.6 15.4L12 10.8Z" />
-      </svg>
-    </div>
-
-    <script defer src="./scripts/script.js"></script>
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./scripts/swiper.js"></script>
   </body>
 </html>
