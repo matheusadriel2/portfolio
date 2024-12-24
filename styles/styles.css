@@ -66,22 +66,40 @@ section {
   flex-direction: column;
   justify-content: end;
   padding: 0 15rem 10rem 15rem;
+  gap: 1rem;
   background-image: url(../assets/img/background.jpg);
   background-size: cover;
   background-position: center;
 }
 
+#curriculum {
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background: #ededed;
+  color: #313131;
+  text-decoration: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#curriculum:hover {
+  background: #313131;
+  color: #ededed;
+}
+
 .about-container {
   display: flex;
   align-items: flex-end;
-  gap: 3.125rem;
+  gap: 27.5rem;
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .about-title {
