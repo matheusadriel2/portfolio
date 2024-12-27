@@ -57,36 +57,49 @@ section {
 }
 
 #curriculum {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
   padding: 1rem 1rem;
-  border-radius: 50%;
-  background: var(--secondary-color);
-  color: var(--primary-color);
   text-decoration: none;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
+  border-radius: 50%;
+  background: var(--background-color);
+  color: var(--primary-color);
+  overflow: hidden;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 #curriculum:hover {
   background: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--background-color);
 }
 
 .navbar {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   position: absolute;
-  max-width: 100%;
+  width: 100%;
   gap: 8.5rem;
   padding: 2rem 9rem 1rem 9rem;
 }
 
-.navbar-elements {
+.nav-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5.5rem;
+  align-items: flex-start;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-list .item {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: "Inter", sans-serif;
+}
+
+.nav-list .item:hover {
+  opacity: 0.7;
 }
 
 #logo {
@@ -237,15 +250,16 @@ section {
 }
 
 #projetos {
-  padding: 1rem 9rem 15rem 9rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10rem 9rem 15rem 9rem;
 }
 
 .container-title {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 0 9rem;
-  margin-top: 10rem;
   margin-bottom: 2rem;
 }
 
@@ -533,11 +547,7 @@ footer {
   }
 
   #projetos {
-    padding: 1rem 5rem 15rem 5rem;
-  }
-
-  .container-title {
-    padding: 0 5rem;
+    padding: 10rem 5rem 15rem 5rem;
   }
 }
 
@@ -586,14 +596,8 @@ footer {
     padding: 5rem 2rem 5rem 2rem;
   }
 
-  .container-title {
-    padding: 0 2rem;
-    margin-top: 5rem;
-    margin-bottom: 0;
-  }
-
   #projetos {
-    padding: 1rem 2rem 10rem 2rem;
+    padding: 10rem 2rem 10rem 2rem;
   }
 
   #about-title {
@@ -646,14 +650,8 @@ footer {
     padding: 5rem 1rem 5rem 1rem;
   }
 
-  .container-title {
-    padding: 0 1rem;
-    margin-top: 5rem;
-    margin-bottom: 0;
-  }
-
   #projetos {
-    padding: 1rem 1rem 5rem 1rem;
+    padding: 5rem 1rem 5rem 1rem;
   }
 
   #about-title {
