@@ -134,7 +134,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 9rem 4rem 9rem;
+  padding: 0 9rem 0 9rem;
   margin: 0 0 10rem 0;
   gap: 1rem;
 }
@@ -567,7 +567,7 @@ footer {
   }
 
   #sobre {
-    padding: 0 5rem 7rem 5rem;
+    padding: 0 5rem 0 5rem;
   }
 
   #skills {
