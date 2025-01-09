@@ -81,6 +81,7 @@ section {
   width: 100%;
   padding: 2rem 9rem 2rem 9rem;
   gap: 8.5rem;
+  z-index: 3;
 }
 
 #logo {
@@ -123,51 +124,59 @@ section {
 }
 
 .nav-list .item:hover {
-  opacity: 0.7;
+  color: #b17457;
 }
 
 .nav-list .item span {
   display: none;
 }
 
-#sobre {
+#home {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 9rem 0 9rem;
   margin: 0 0 10rem 0;
-  gap: 1rem;
 }
 
-.about-container {
+.bgpicture {
+  position: absolute;
+  background-image: url("../assets/img/88609.jpg");
+  width: 200px;
+  height: 50vh;
+  background-position: -150px -30px;
+  top: 0;
+  right: 10%;
+  z-index: 0;
+}
+
+.home-container {
   display: flex;
+  justify-content: space-between;
   align-items: flex-end;
-  gap: 20rem;
 }
 
-.about-info {
+.home-info {
   display: flex;
-  gap: 1rem;
 }
 
-.about-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.about-title {
+.home-content {
   display: flex;
   flex-direction: column;
 }
 
-#about-title {
+.home-title {
+  display: flex;
+  flex-direction: column;
+}
+
+#home-title {
   display: flex;
   color: var(--primary-color);
-  font-size: 8rem;
+  font-size: 7rem;
 }
 
-#about-subtitle {
+#home-subtitle {
   display: flex;
   color: var(--primary-color);
   font-size: 1.25rem;
@@ -176,12 +185,74 @@ section {
   letter-spacing: 0.1rem;
 }
 
-#about-description {
+#home-description {
   display: flex;
+  color: #b17457;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#about {
+  display: flex;
+  padding: 10rem 9rem 10rem 9rem;
+}
+
+.about-content {
+  display: flex;
+}
+
+#about-title {
   color: var(--primary-color);
-  font-size: 18px;
+  font-size: 4.5rem;
+}
+
+.highlight {
+  color: #b17457;
+}
+
+.about-content-info {
+  display: flex;
+  gap: 15rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-content-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.about-content-info-text p {
+  color: var(--primary-color);
+  font-size: 1.25rem;
   font-weight: 300;
-  line-height: 160%;
+  line-height: 1.75rem;
+}
+
+.about-content-info-image {
+  position: relative;
+}
+
+#profile-picture {
+  display: block;
+  max-width: 300px;
+  pointer-events: none;
+}
+
+#notion-avatar {
+  position: absolute;
+  max-width: 100px;
+  border-radius: 50%;
+  z-index: 3;
+
+  top: -35px;
+  left: -35px;
+  transition: 0.3s ease;
+}
+
+#notion-avatar:hover, #notion-avatar:focus {
+  transform: scale(1.1);
 }
 
 #skills {
@@ -200,7 +271,7 @@ section {
   gap: 4rem;
 }
 
-.skills-content-text {
+.skills-content-title {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -271,6 +342,25 @@ section {
 
 .uxui {
   animation-delay: calc(10s / 5 * (5 - 5) * -1);
+}
+
+.skills-content-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+.skills-content-text p {
+  transition: 0.2s ease;
+}
+
+.skills-content-text p:hover,
+.skills-content-text p:focus {
+  color: #b17457;
 }
 
 #projetos {
@@ -515,6 +605,7 @@ footer {
 }
 
 .no-select {
+  pointer-events: none;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -536,15 +627,15 @@ footer {
 }
 
 @media (max-width: 1280px) {
-  #sobre {
+  #home {
     margin: 0 0 4rem 0;
   }
 
-  #about-title {
+  #home-title {
     font-size: 6rem;
   }
 
-  .about-container {
+  .home-container {
     gap: 15rem;
   }
 }
@@ -554,7 +645,11 @@ footer {
     display: none;
   }
 
-  .about-container {
+  #home {
+    padding: 10rem 5rem 0 5rem;
+  }
+
+  .home-container {
     gap: 0;
   }
 
@@ -566,8 +661,14 @@ footer {
     padding: 2rem 5rem 2rem 5rem;
   }
 
-  #sobre {
-    padding: 0 5rem 0 5rem;
+  #about {
+    padding: 10rem 5rem 10rem 5rem;
+    height: 100%;
+  }
+
+  .about-content-info {
+    flex-direction: column;
+    gap: 5rem;
   }
 
   #skills {
@@ -598,16 +699,20 @@ footer {
 
   .navbar {
     position: fixed;
-    background: var(--background-color);
     z-index: 9999;
+    transition: background 0.3s ease;
+  }
+
+  .navbar.scrolled {
+    background: var(--background-color);
   }
 
   .nav-list {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 0;
     gap: 1rem;
-    padding: 2rem 5rem;
+    padding: 7rem 5rem 5rem 5rem;
     flex-direction: column;
     align-items: start;
     background: var(--background-color);
@@ -636,8 +741,8 @@ footer {
     margin: 1rem 0rem;
   }
 
-  #about-title {
-    font-size: 5.5rem;
+  #home-title {
+    font-size: 4.75rem;
   }
 
   #contato {
@@ -672,11 +777,15 @@ footer {
   }
 
   .nav-list {
-    padding: 2rem 2rem;
+    padding: 6rem 2rem 5rem 2rem;
   }
 
-  #sobre {
-    padding: 0 2rem 0 2rem;
+  #home {
+    padding: 5rem 2rem 0 2rem;
+  }
+
+  #about {
+    padding: 5rem 2rem 5rem 2rem;
     margin: 0 0 5rem 0;
   }
 
@@ -688,8 +797,12 @@ footer {
     padding: 10rem 2rem 10rem 2rem;
   }
 
-  #about-title {
+  #home-title {
     font-size: 3.75rem;
+  }
+
+  #about-title {
+    font-size: 3.5rem;
   }
 
   #skills-title {
@@ -729,7 +842,7 @@ footer {
     padding: 2rem 1rem 2rem 1rem;
   }
 
-  #sobre {
+  #about {
     padding: 0 1rem 0 1rem;
     margin: 0 0 5rem 0;
   }
@@ -742,7 +855,7 @@ footer {
     padding: 5rem 1rem 5rem 1rem;
   }
 
-  #about-title {
+  #home-title {
     font-size: 3.5rem;
   }
 
