@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background: var(--background-color);
+}
+
+#copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.375rem 0;
+  gap: 1.25rem;
+}
+
+#copy-text {
+  color: var(--tertiary-color);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem;
+}
