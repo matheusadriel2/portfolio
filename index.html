@@ -12,8 +12,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/components/navbar.css" />
+    <link rel="stylesheet" href="./styles/components/footer.css" />
+    <link rel="stylesheet" href="./styles/pages/home.css" />
     <link rel="icon" href="./assets/icons/favicon.png" />
   </head>
 
@@ -61,32 +64,22 @@
     </header>
 
     <main>
-      <a
-        href="./docs/matheusadriel-cv.pdf"
-        rel="noreferrer noopener"
-        target="_blank"
-        id="curriculum"
-        class="material-symbols-outlined"
-        >Inventory</a
-      >
-
       <section id="home">
         <div>
-          <div class="bgpicture"></div>
-          <div class="home-container">
-            <div class="home-content">
-              <div class="home-title">
-                <h1 id="home-title" class="display">MATHEUS</h1>
-                <h1 id="home-title" class="display">ADRIEL</h1>
+          <div class="background-image"></div>
+          <div class="container">
+            <div class="content">
+              <div class="title">
+                <h1 class="display" id="home-title">MATHEUS</h1>
+                <h1 class="display" id="home-title">ADRIEL</h1>
               </div>
-              <div class="home-info">
-                <p id="home-description">desenvolvedor fullstack.</p>
+              <div class="info">
+                <p id="home-subtitle">desenvolvedor fullstack.</p>
               </div>
             </div>
-            <div class="home-avatar">
+            <div class="autoRotateAnimation" id="profile-star">
               <img
-                id="profile-star"
-                class="autoRotate"
+                class="autoRotateAnimation"
                 src="./assets/icons/bw02_star.svg"
                 alt=""
               />
@@ -99,30 +92,48 @@
       <hr class="divider" />
 
       <section id="about">
-        <div class="about-content">
-          <div class="about-content-info">
-            <div class="about-content-info-text">
-              <h1 id="about-title" class="display">Sobre</h1>
-              <p>
-                Matheus Adriel, 25 anos, desenvolvedor com experiência tanto em
-                <span class="highlight">front</span> quanto em
-                <span class="highlight">back-end</span>, além de um forte
-                background em design. Combino habilidades técnicas e criativas
-                no desenvolvimento de sistemas robustos e funcionais, focados em
-                oferecer <span class="highlight">experiências memoráveis</span>.
-              </p>
+        <div class="content">
+          <div class="info">
+            <div class="text">
+              <div>
+                <h1 class="display" id="about-title">Sobre</h1>
+                <p id="about-description">
+                  Matheus Adriel, 25 anos, desenvolvedor com experiência tanto
+                  em
+                  <span class="highlight">front</span> quanto em
+                  <span class="highlight">back-end</span>, além de um forte
+                  background em design. Combino habilidades técnicas e criativas
+                  no desenvolvimento de sistemas robustos e funcionais, focados
+                  em oferecer
+                  <span class="highlight">experiências memoráveis</span>.
+                </p>
+              </div>
+
+              <div class="curriculum">
+                <a
+                  href="./documents/resume.pdf"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  type="application/pdf"
+                  id="curriculum"
+                >
+                  curriculum vitae
+                </a>
+              </div>
             </div>
-            <div class="about-content-info-image">
+            <div class="image">
               <img
                 id="profile-picture"
                 src="./assets/img/profilepicture.jpg"
                 alt="Matheus Adriel - Fotografia Pessoal"
               />
-              <img
-                src="./assets/img/notion-portrait.png"
-                alt=""
-                id="notion-avatar"
-              />
+              <div class="notion">
+                <img
+                  src="./assets/img/notion-portrait.png"
+                  alt=""
+                  id="notion-avatar"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -131,55 +142,55 @@
       <hr class="divider" />
 
       <section id="skills">
-        <div class="skills-content">
-          <div class="skills-content-title no-select">
+        <div class="content">
+          <div class="title no-select">
             <h1 id="skills-title" class="display">Skills</h1>
             <p id="skills-subtitle">
               Principais tecnologias e competências técnicas
             </p>
           </div>
 
-          <div class="skills-content-icons no-select">
+          <div class="icons no-select">
             <img
-              class="skills-icons java no-select"
+              class="icon java no-select"
               src="./assets/icons/java.svg"
               alt="Java"
             />
             <img
-              class="skills-icons javascript no-select"
+              class="icon javascript no-select"
               src="./assets/icons/javascript.svg"
               alt="Javascript"
             />
             <img
-              class="skills-icons html no-select"
+              class="icon html no-select"
               src="./assets/icons/html.svg"
               alt="HTML"
             />
             <img
-              class="skills-icons css no-select"
+              class="icon css no-select"
               src="./assets/icons/css.svg"
               alt="CSS"
             />
             <img
-              class="skills-icons uxui no-select"
+              class="icon uxui no-select"
               src="./assets/icons/uxui.svg"
               alt="UX/UI"
             />
           </div>
 
-          <div class="skills-content-text">
+          <div class="text">
             <p>HTML5</p>
-            <span>·</span>
+            <span class="no-select">·</span>
             <p>CSS3</p>
-            <span>·</span>
+            <span class="no-select">·</span>
             <p>JavaScript</p>
-            <span>·</span>
+            <span class="no-select">·</span>
             <p>Java</p>
-            <span>·</span>
+            <span class="no-select">·</span>
             <p>Spring Boot</p>
-            <span>·</span>
+            <span class="no-select">·</span>
             <p>SCRUM</p>
-            <span>·</span>
+            <span class="no-select">·</span>
             <p>UX/UI</p>
           </div>
         </div>
@@ -187,18 +198,18 @@
 
       <hr class="divider" />
 
-      <section id="projetos">
-        <div class="container-title">
-          <div class="projetos-title no-select">
+      <section id="projects">
+        <div class="container">
+          <div class="title no-select">
             <h1 id="projects-title" class="display">Projetos</h1>
             <p id="projects-subtitle">Últimas aplicações desenvolvidas</p>
           </div>
-          <a href="#" class="vermais material-symbols-outlined"
+          <a href="#" class="seemore material-symbols-outlined"
             >arrow_circle_right</a
           >
         </div>
 
-        <div class="projetos-content">
+        <div class="projects-content">
           <div class="container swiper">
             <div class="card-wrapper">
               <div class="card-list swiper-wrapper">
@@ -305,11 +316,11 @@
         </div>
       </section>
 
-      <div id="contato">
-        <div class="info-content">
-          <div class="info-content-contact">
+      <div id="contact">
+        <div class="content">
+          <div class="contact">
             <p id="contact-text">CONTATO</p>
-            <div class="content-contact-contacts">
+            <div class="info">
               <p id="contact-phone">+55 (19) 99723-2710</p>
               <p>
                 <a href="mailto:matheusadrieldsc@gmail.com" id="contact-mail">
@@ -318,9 +329,9 @@
               </p>
             </div>
           </div>
-          <div class="info-content-social">
+          <div class="social">
             <p id="social-text">SOCIAL</p>
-            <div class="content-social-icons">
+            <div class="icons">
               <a href="https://wa.me/5519997232710">
                 <img src="./assets/icons/whatsapp.svg" alt="" />
               </a>
@@ -341,13 +352,91 @@
 
     <footer>
       <div id="copy">
-        <p id="copy-text">Matheus Adriel © 2025</p>
+        <p class="no-select" id="copy-text">Matheus Adriel © 2025</p>
       </div>
     </footer>
 
-    <!-- SwiperJS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script defer src="./scripts/swiper.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script defer src="./scripts/script.js"></script>
+
+    <!--  SwiperJS Script -->
+    <script>
+      const swiper = new Swiper(".card-wrapper", {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 50,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+
+    <!-- ScrollRevealJS Script -->
+    <script>
+      ScrollReveal({
+        reset: false,
+        distance: "60px",
+        duration: 2500,
+        delay: 100,
+      });
+
+      ScrollReveal().reveal(
+        "#home-title, #about-title, #skills-title, #projects-title",
+        {
+          delay: 250,
+          origin: "left",
+        }
+      );
+      ScrollReveal().reveal(
+        "#logo, #home-subtitle, #about-description, .curriculum, #skills-subtitle, #projects-subtitle",
+        {
+          delay: 500,
+          origin: "left",
+        }
+      );
+      ScrollReveal().reveal(".bold", { delay: 750, origin: "left" });
+      ScrollReveal().reveal("#profile-picture, .seemore", {
+        delay: 500,
+        origin: "right",
+      });
+      ScrollReveal().reveal("#profile-star, .notion", {
+        delay: 750,
+        origin: "right",
+      });
+      ScrollReveal().reveal(".background-image", { delay: 500, origin: "top" });
+      ScrollReveal().reveal(".nav-list", {
+        delay: 750,
+        origin: "top",
+        interval: 200,
+      });
+      ScrollReveal().reveal(
+        "#home .container, .about .content, #skills .content, .projects-content",
+        {
+          delay: 500,
+          origin: "bottom",
+        }
+      );
+    </script>
   </body>
 </html>
