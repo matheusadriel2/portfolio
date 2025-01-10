@@ -549,25 +549,21 @@
     padding: 5rem 2rem 0 2rem;
   }
 
+  #home-title {
+    font-size: 3.75rem;
+  }
+
   #about {
     padding: 5rem 2rem 5rem 2rem;
     margin: 0 0 5rem 0;
   }
 
-  #skills {
-    padding: 5rem 2rem 5rem 2rem;
-  }
-
-  #projects {
-    padding: 10rem 2rem 10rem 2rem;
-  }
-
-  #home-title {
-    font-size: 3.75rem;
-  }
-
   #about-title {
     font-size: 3.5rem;
+  }
+
+  #skills {
+    padding: 5rem 2rem 5rem 2rem;
   }
 
   #skills-title {
@@ -577,6 +573,19 @@
   #skills-subtitle {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  #skills .icons {
+    width: 100%;
+  }
+
+  #skills .icon {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  #projects {
+    padding: 10rem 2rem 10rem 2rem;
   }
 
   #projects .title {
@@ -590,11 +599,6 @@
   #projects-subtitle {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  #skills .icons {
-    height: 5rem;
-    width: 5rem;
   }
 }
 
