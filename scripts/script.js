@@ -1,3 +1,4 @@
+// Mobile menu
 const mobileMenu = document.querySelector(".mobile-menu");
 const navMenu = document.querySelector(".nav-list");
 
@@ -13,6 +14,7 @@ document.querySelectorAll(".item").forEach((n) =>
   })
 );
 
+// Reveals navbar on scroll
 document.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
   const homeTitle = document.querySelector("#home-title");
