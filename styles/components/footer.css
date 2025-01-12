@@ -17,7 +17,7 @@ footer {
 }
 
 #copy-text {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 300;
