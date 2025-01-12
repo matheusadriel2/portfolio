@@ -508,6 +508,10 @@
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   #home-title {
     font-size: 4.75rem;
   }
