@@ -509,7 +509,7 @@
   }
 
   #projects {
-    padding: 10rem 5rem 15rem 5rem;
+    padding: 10rem 5rem 10rem 5rem;
   }
 }
 
@@ -555,7 +555,6 @@
 
   #about {
     padding: 5rem 2rem 5rem 2rem;
-    margin: 0 0 5rem 0;
   }
 
   #about-title {
@@ -607,9 +606,12 @@
     border: 0.5rem solid var(--primary-color);
   }
 
+  #home {
+    padding: 5rem 1rem 0 1rem;
+  }
+
   #about {
-    padding: 0 1rem 0 1rem;
-    margin: 0 0 5rem 0;
+    padding: 5rem 1rem 5rem 1rem;
   }
 
   #skills {

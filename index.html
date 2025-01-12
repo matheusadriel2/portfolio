@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="sr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"
+      name="viewport"
+    />
+    <meta name="viewport" content="width=device-width" />
     <title>Matheus Adriel</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -18,6 +22,8 @@
     <link rel="stylesheet" href="./styles/components/footer.css" />
     <link rel="stylesheet" href="./styles/pages/home.css" />
     <link rel="icon" href="./assets/icons/favicon.png" />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
 
   <body>
@@ -43,13 +49,13 @@
             </a>
           </li>
           <li>
-            <a href="#projetos" class="item">
+            <a href="#projects" class="item">
               <span class="material-symbols-outlined">token</span>
               <p>Projetos</p>
             </a>
           </li>
           <li>
-            <a href="#contato" class="item">
+            <a href="#contact" class="item">
               <span class="material-symbols-outlined">call</span>
               <p>Contato</p>
             </a>
@@ -357,7 +363,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script defer src="./scripts/script.js"></script>
 
     <!--  SwiperJS Script -->
@@ -366,6 +371,12 @@
         loop: true,
         slidesPerView: 3,
         spaceBetween: 50,
+
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
 
         pagination: {
           el: ".swiper-pagination",
@@ -415,8 +426,7 @@
           origin: "left",
         }
       );
-      ScrollReveal().reveal(".bold", { delay: 750, origin: "left" });
-      ScrollReveal().reveal("#profile-picture, .seemore", {
+      ScrollReveal().reveal("#profile-picture, .seemore, .mobile-menu", {
         delay: 500,
         origin: "right",
       });
@@ -431,12 +441,13 @@
         interval: 200,
       });
       ScrollReveal().reveal(
-        "#home .container, .about .content, #skills .content, .projects-content",
+        "#home .container, .about .content, #skills .content, .projects-content, .divider",
         {
           delay: 500,
           origin: "bottom",
         }
       );
+      ScrollReveal().reveal(".bold", { delay: 750, origin: "bottom" });
     </script>
   </body>
 </html>

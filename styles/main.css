@@ -14,8 +14,8 @@ html {
   font-size: 16px;
 }
 
-body,
-html {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -62,4 +62,120 @@ section {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+
+/* ===== MediaQueries Section ===== */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 481px) {
+  .bold {
+    border: 0.5rem solid var(--primary-color);
+  }
+
+  #home {
+    padding: 5rem 2rem 0 2rem;
+  }
+
+  #home-title {
+    font-size: 3.75rem;
+  }
+
+  #about {
+    padding: 5rem 2rem 5rem 2rem;
+  }
+
+  #about-title {
+    font-size: 3.5rem;
+  }
+
+  #skills {
+    padding: 5rem 2rem 5rem 2rem;
+  }
+
+  #skills-title {
+    font-size: 3.5rem;
+  }
+
+  #skills-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  #skills .icons {
+    width: 100%;
+  }
+
+  #skills .icon {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  #projects {
+    padding: 10rem 2rem 10rem 2rem;
+  }
+
+  #projects .title {
+    gap: 1rem;
+  }
+
+  #projects-title {
+    font-size: 3.5rem;
+  }
+
+  #projects-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .bold {
+    border: 0.5rem solid var(--primary-color);
+  }
+
+  #home {
+    padding: 5rem 1rem 0 1rem;
+  }
+
+  #about {
+    padding: 5rem 1rem 5rem 1rem;
+  }
+
+  #skills {
+    padding: 5rem 1rem 5rem 1rem;
+  }
+
+  #projects {
+    padding: 5rem 1rem 5rem 1rem;
+  }
+
+  #home-title {
+    font-size: 3.5rem;
+  }
+
+  #skills-title {
+    font-size: 3.5rem;
+  }
+
+  #skills-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  #projects .title {
+    gap: 1rem;
+  }
+
+  #projects-title {
+    font-size: 3.5rem;
+  }
+
+  #projects-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }

@@ -57,7 +57,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Media queries */
+/* ===== MediaQueries ===== */
 @media (max-width: 1150px) {
   .navbar {
     padding: 2rem 5rem 2rem 5rem;
@@ -139,5 +139,9 @@
 @media (max-width: 359px) {
   .navbar {
     padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .nav-list {
+    padding: 6rem 1rem 5rem 1rem;
   }
 }
