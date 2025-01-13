@@ -1,0 +1,165 @@
+/* ===== Projects Page ===== */
+main div.void {
+  background-color: var(--background-color);
+  width: 100%;
+  height: 6.5rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* ===== Navbar Override ===== */
+.nav-list {
+  gap: 3rem;
+}
+
+/* ===== Title ===== */
+main div.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  height: 30rem;
+  padding: 0 9rem 0 9rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--tertiary-color);
+}
+
+/* ===== Filter ===== */
+main .filter {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+  padding: 5rem 5rem 0 5rem;
+}
+
+.filter #filter {
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  border: none;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-left: 3px solid #8f8f8f;
+  outline: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* ===== Project list ===== */
+.card-wrapper {
+  padding: 2.5rem 5rem 5rem 5rem;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.card-item {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  &.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+  }
+}
+.card-link {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  background: #222222;
+  border-radius: 15px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+  &:hover {
+    border-color: var(--secondary-color);
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+}
+
+.card-content {
+  text-align: start;
+  padding: 1.5rem;
+}
+
+.card-content p {
+  color: var(--primary-color);
+  line-height: 20px;
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  margin: 0;
+}
+
+.badges {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
+.badge {
+  color: var(--primary-color);
+  padding: 0.25rem 0.75rem;
+  margin: 1rem 0 1.1rem;
+  background: var(--tertiary-color);
+  font-size: 0.75rem;
+  width: fit-content;
+  border-radius: 15px;
+  transition: 0.2s ease;
+}
+
+#html-badge {
+  background: var(--html-color);
+}
+
+#css-badge {
+  background: var(--css-color);
+}
+
+#js-badge {
+  background: #f0db4f;
+  color: #222222;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+/* ===== Footer Override ===== */
+footer {
+  background: var(--primary-color);
+  /* place-self: end; */
+}
+
+footer #copy-text {
+  color: var(--background-color);
+  font-weight: 400;
+}
