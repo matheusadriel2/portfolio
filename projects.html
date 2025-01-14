@@ -67,9 +67,12 @@
     <main>
       <div class="void"></div>
       <div class="title">
-        <h1 class="display">Projetos</h1>
-        <h3 class="subtitle">Confira abaixo alguns dos projetos que desenvolvi. 😉</h3>
+        <div class="content">
+          <h1 class="display">Projetos</h1>
+          <div><h3 class="subtitle">Confira abaixo alguns dos projetos que desenvolvi. 😉</h3></div>
+        </div>
       </div>
+
       <div class="projects">
         <form class="filter">
           <div class="item">
@@ -82,6 +85,7 @@
               <option value="java">Java</option>
             </select>
           </div>
+
           <div class="item">
             <select name="area" id="filter">
               <option value="area">Área</option>
@@ -91,138 +95,105 @@
             </select>
           </div>
         </form>
+
         <div class="content">
           <div class="container">
             <div class="card-wrapper">
               <div class="card-list">
                 <div class="card-item html css js front-end">
-                  <button class="card-link">
+                  <button popovertarget="popover1" class="card-link">
                     <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
                     <div class="card-content">
                       <div class="badges">
-                        <p class="badge" id="html-badge">HTML</p>
-                        <p class="badge" id="css-badge">CSS</p>
-                        <p class="badge" id="js-badge">JavaScript</p>
+                        <p class="badge html-badge">HTML</p>
+                        <p class="badge css-badge">CSS</p>
+                        <p class="badge js-badge">JavaScript</p>
                       </div>
                       <h2 class="card-title">Portfólio</h2>
-                      <p>
+                      <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis aperiam ducimus voluptates! Quibusdam
                         quisquam hic ut eos expedita fugit error sunt odio omnis ab, doloribus, ullam blanditiis magni quae!
                       </p>
                     </div>
                   </button>
+                  <dialog class="popover" id="popover1" popover="manual">
+                    <div class="content">
+                      <button popovertarget="popover1" popovertargetaction="hide" class="icon">❌</button>
+                      <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
+                    </div>
+                  </dialog>
                 </div>
-                <div class="card-item">
-                  <button class="card-link">
-                    <img src="./assets/img/projeto-166706.jpg" alt="" class="card-image" />
+
+                <div class="card-item html css js front-end">
+                  <button popovertarget="popover2" class="card-link">
+                    <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
                     <div class="card-content">
                       <div class="badges">
-                        <p class="badge" id="html-badge">HTML</p>
-                        <p class="badge" id="css-badge">CSS</p>
+                        <p class="badge html-badge">HTML</p>
+                        <p class="badge css-badge">CSS</p>
+                        <p class="badge js-badge">JavaScript</p>
                       </div>
-                      <h2 class="card-title">Projeto 01</h2>
-                      <p>
+                      <h2 class="card-title">Portfólio</h2>
+                      <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis aperiam ducimus voluptates! Quibusdam
                         quisquam hic ut eos expedita fugit error sunt odio omnis ab, doloribus, ullam blanditiis magni quae!
                       </p>
                     </div>
                   </button>
+                  <dialog class="popover" id="popover2" popover="manual">
+                    <div class="content">
+                      <button popovertarget="popover2" popovertargetaction="hide" class="icon">❌</button>
+                      <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
+                    </div>
+                  </dialog>
                 </div>
-                <div class="card-item">
-                  <button class="card-link">
-                    <img src="./assets/img/projeto-210607.jpg" alt="" class="card-image" />
+
+                <div class="card-item html css js front-end">
+                  <button popovertarget="popover3" class="card-link">
+                    <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
                     <div class="card-content">
                       <div class="badges">
-                        <p class="badge" id="html-badge">HTML</p>
-                        <p class="badge" id="css-badge">CSS</p>
+                        <p class="badge html-badge">HTML</p>
+                        <p class="badge css-badge">CSS</p>
+                        <p class="badge js-badge">JavaScript</p>
                       </div>
-                      <h2 class="card-title">Projeto 02</h2>
-                      <p>
+                      <h2 class="card-title">Portfólio</h2>
+                      <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis aperiam ducimus voluptates! Quibusdam
                         quisquam hic ut eos expedita fugit error sunt odio omnis ab, doloribus, ullam blanditiis magni quae!
                       </p>
                     </div>
                   </button>
+                  <dialog class="popover" id="popover3" popover="manual">
+                    <div class="content">
+                      <button popovertarget="popover3" popovertargetaction="hide" class="icon">❌</button>
+                      <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
+                    </div>
+                  </dialog>
                 </div>
-                <div class="card-item">
-                  <button class="card-link">
-                    <img src="./assets/img/projeto-340146.jpg" alt="" class="card-image" />
+
+                <div class="card-item html css js front-end">
+                  <button popovertarget="popover4" class="card-link">
+                    <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
                     <div class="card-content">
                       <div class="badges">
-                        <p class="badge" id="html-badge">HTML</p>
-                        <p class="badge" id="css-badge">CSS</p>
+                        <p class="badge html-badge">HTML</p>
+                        <p class="badge css-badge">CSS</p>
+                        <p class="badge js-badge">JavaScript</p>
                       </div>
-                      <h2 class="card-title">Projeto 04</h2>
-                      <p>
+                      <h2 class="card-title">Portfólio</h2>
+                      <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis aperiam ducimus voluptates! Quibusdam
                         quisquam hic ut eos expedita fugit error sunt odio omnis ab, doloribus, ullam blanditiis magni quae!
                       </p>
                     </div>
                   </button>
-                </div>
-                <div class="card-item">
-                  <button class="card-link">
-                    <img src="./assets/img/projeto-340146.jpg" alt="" class="card-image" />
-                    <div class="card-content">
-                      <div class="badges">
-                        <p class="badge" id="html-badge">HTML</p>
-                        <p class="badge" id="css-badge">CSS</p>
-                      </div>
-                      <h2 class="card-title">Projeto 05</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis aperiam ducimus voluptates! Quibusdam
-                        quisquam hic ut eos expedita fugit error sunt odio omnis ab, doloribus, ullam blanditiis magni quae!
-                      </p>
+                  <dialog class="popover" id="popover4" popover="manual">
+                    <div class="content">
+                      <button popovertarget="popover4" popovertargetaction="hide" class="icon">❌</button>
+                      <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
                     </div>
-                  </button>
-                </div>
-                <div class="card-item">
-                  <button class="card-link" id="projeto06">
-                    <img src="./assets/img/projeto-340146.jpg" alt="" class="card-image" />
-                    <div class="card-content">
-                      <div class="badges">
-                        <p class="badge" id="html-badge">HTML</p>
-                        <p class="badge" id="css-badge">CSS</p>
-                      </div>
-                      <h2 class="card-title">Projeto 06</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis aperiam ducimus voluptates! Quibusdam
-                        quisquam hic ut eos expedita fugit error sunt odio omnis ab, doloribus, ullam blanditiis magni quae!
-                      </p>
-                    </div>
-                  </button>
-                </div>
-                <div class="card-item">
-                  <button class="card-link">
-                    <img src="./assets/img/projeto-340146.jpg" alt="" class="card-image" />
-                    <div class="card-content">
-                      <div class="badges">
-                        <p class="badge" id="html-badge">HTML</p>
-                        <p class="badge" id="css-badge">CSS</p>
-                      </div>
-                      <h2 class="card-title">Projeto 07</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis aperiam ducimus voluptates! Quibusdam
-                        quisquam hic ut eos expedita fugit error sunt odio omnis ab, doloribus, ullam blanditiis magni quae!
-                      </p>
-                    </div>
-                  </button>
-                </div>
-                <div class="card-item">
-                  <button class="card-link">
-                    <img src="./assets/img/projeto-340146.jpg" alt="" class="card-image" />
-                    <div class="card-content">
-                      <div class="badges">
-                        <p class="badge" id="html-badge">HTML</p>
-                        <p class="badge" id="css-badge">CSS</p>
-                      </div>
-                      <h2 class="card-title">Projeto 08</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis aperiam ducimus voluptates! Quibusdam
-                        quisquam hic ut eos expedita fugit error sunt odio omnis ab, doloribus, ullam blanditiis magni quae!
-                      </p>
-                    </div>
-                  </button>
+                  </dialog>
                 </div>
               </div>
             </div>
@@ -230,6 +201,8 @@
         </div>
       </div>
     </main>
+
+    <hr class="divider" />
 
     <footer>
       <div id="copy">
@@ -240,4 +213,31 @@
 
   <script src="./scripts/projects.js"></script>
   <script src="./scripts/navbar.js"></script>
+
+  <script>
+    ScrollReveal({
+      reset: false,
+      distance: "60px",
+      duration: 2500,
+      delay: 100,
+    });
+
+    ScrollReveal().reveal("#logo", {
+      delay: 500,
+      origin: "left",
+    });
+    ScrollReveal().reveal(".mobile-menu", {
+      delay: 500,
+      origin: "right",
+    });
+    ScrollReveal().reveal(".nav-list", {
+      delay: 750,
+      origin: "top",
+      interval: 200,
+    });
+    ScrollReveal().reveal(".title .content, .filter", {
+      delay: 500,
+      origin: "bottom",
+    });
+  </script>
 </html>

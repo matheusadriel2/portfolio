@@ -5,9 +5,8 @@ main div.void {
   height: 6.5rem;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
+body.modal-open {
+  overflow: hidden;
 }
 
 main {
@@ -30,9 +29,27 @@ main div.title {
   padding: 0 9rem 0 9rem;
 }
 
+.title div {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .subtitle {
+  overflow: hidden;
+  width: 0;
+  line-height: 1.75rem;
   font-size: 1.5rem;
   color: var(--tertiary-color);
+  animation: typing 3s steps(46) 2s forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 46ch;
+  }
 }
 
 /* ===== Filter ===== */
@@ -52,9 +69,7 @@ main .filter {
   border-left: 3px solid #8f8f8f;
   outline: none;
   border-radius: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  cursor: pointer;
 }
 
 /* ===== Project list ===== */
@@ -103,7 +118,7 @@ main .filter {
   padding: 1.5rem;
 }
 
-.card-content p {
+.description {
   color: var(--primary-color);
   line-height: 20px;
 }
@@ -124,27 +139,27 @@ main .filter {
 }
 
 .badge {
-  color: var(--primary-color);
+  color: var(--background-color);
   padding: 0.25rem 0.75rem;
   margin: 1rem 0 1.1rem;
   background: var(--tertiary-color);
   font-size: 0.75rem;
+  font-weight: 500;
   width: fit-content;
   border-radius: 15px;
   transition: 0.2s ease;
 }
 
-#html-badge {
+.html-badge {
   background: var(--html-color);
 }
 
-#css-badge {
+.css-badge {
   background: var(--css-color);
 }
 
-#js-badge {
+.js-badge {
   background: #f0db4f;
-  color: #222222;
 }
 
 .card-title {
@@ -153,13 +168,45 @@ main .filter {
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
-/* ===== Footer Override ===== */
-footer {
-  background: var(--primary-color);
-  /* place-self: end; */
+
+.popover {
+  user-select: none;
+  position: fixed;
+  place-self: center;
+  flex-direction: column;
+  width: 35%;
+  height: 80%;
+  background: #222222;
+  border-radius: 1rem;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
 }
 
-footer #copy-text {
-  color: var(--background-color);
-  font-weight: 400;
+.popover .icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popover::backdrop {
+  background-color: #0007;
+  backdrop-filter: blur(3px);
+}
+
+.popover .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.popover .card-image {
+  height: 25%;
 }

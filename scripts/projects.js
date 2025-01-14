@@ -32,3 +32,55 @@ cards.forEach((card) => {
     }
   });
 });
+
+// Popover
+document.addEventListener("DOMContentLoaded", () => {
+  const openButtons = document.querySelectorAll(".card-link");
+
+  openButtons.forEach((openButton) => {
+    const popoverId = openButton.getAttribute("popovertarget");
+    const popover = document.getElementById(popoverId);
+
+    if (!popover) {
+      console.warn(`Popover com ID "${popoverId}" não encontrado.`);
+      return;
+    }
+
+    const closeButton = popover.querySelector(".icon");
+
+    if (!closeButton) {
+      console.warn(`Botão de fechamento não encontrado no popover "${popoverId}".`);
+      return;
+    }
+
+    const openPopover = (event) => {
+      event.preventDefault();
+      popover.showModal();
+      document.body.classList.add("modal-open");
+    };
+
+    const closeModal = () => {
+      popover.close();
+      document.body.classList.remove("modal-open");
+    };
+
+    openButton.addEventListener("click", openPopover);
+
+    closeButton.addEventListener("click", closeModal);
+
+    popover.addEventListener("click", (event) => {
+      if (event.target === popover) {
+        closeModal();
+      }
+    });
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      document.querySelectorAll(".popover[open]").forEach((popover) => {
+        popover.close();
+      });
+      document.body.classList.remove("modal-open");
+    }
+  });
+});
