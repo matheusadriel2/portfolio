@@ -35,22 +35,22 @@ main div.title {
 }
 
 .subtitle {
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 0;
   line-height: 1.75rem;
   font-size: 1.5rem;
   color: var(--tertiary-color);
-  animation: typing 3s steps(46) 2s forwards;
+  /* animation: typing 3s steps(46) 2s forwards; */
 }
 
-@keyframes typing {
+/* @keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 46ch;
+    width: 100%;
   }
-}
+} */
 
 /* ===== Filter ===== */
 main .filter {
@@ -209,4 +209,38 @@ main .filter {
 
 .popover .card-image {
   height: 25%;
+}
+
+@media (max-width: 1330px) {
+  .card-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1020px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  main div.title {
+    padding: 0 2rem 0 2rem;
+  }
+
+  .subtitle {
+    text-wrap: wrap;
+  }
+
+  .display {
+    font-size: 3.5rem;
+  }
+
+  .card-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-wrapper {
+    padding: 2.5rem 2.5rem 5rem 2.5rem;
+  }
 }

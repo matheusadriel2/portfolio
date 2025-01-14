@@ -624,25 +624,4 @@
     font-size: 3.5rem;
   }
 
-  #skills-title {
-    font-size: 3.5rem;
-  }
-
-  #skills-subtitle {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  #projects .title {
-    gap: 1rem;
-  }
-
-  #projects-title {
-    font-size: 3.5rem;
-  }
-
-  #projects-subtitle {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
 }
