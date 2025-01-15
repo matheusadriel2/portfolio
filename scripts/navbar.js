@@ -17,7 +17,7 @@ document.querySelectorAll(".item").forEach((n) =>
 // Reveals navbar on scroll
 document.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
-  const homeTitle = document.querySelector("#home-title, h1");
+  const homeTitle = document.querySelector("#home-title, .void");
 
   const aboutTop = homeTitle.getBoundingClientRect().top;
 

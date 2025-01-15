@@ -1,4 +1,3 @@
-/* ===== Projects Page ===== */
 main div.void {
   background-color: var(--background-color);
   width: 100%;
@@ -13,12 +12,10 @@ main {
   flex: 1;
 }
 
-/* ===== Navbar Override ===== */
 .nav-list {
   gap: 3rem;
 }
 
-/* ===== Title ===== */
 main div.title {
   display: flex;
   flex-direction: column;
@@ -30,29 +27,19 @@ main div.title {
 }
 
 .title div {
-  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
   white-space: nowrap;
+  width: 100%;
 }
 
 .subtitle {
-  /* overflow: hidden; */
-  width: 0;
+  overflow: hidden;
   line-height: 1.75rem;
   font-size: 1.5rem;
   color: var(--tertiary-color);
-  /* animation: typing 3s steps(46) 2s forwards; */
 }
 
-/* @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-} */
-
-/* ===== Filter ===== */
 main .filter {
   display: flex;
   align-items: center;
@@ -72,7 +59,6 @@ main .filter {
   cursor: pointer;
 }
 
-/* ===== Project list ===== */
 .card-wrapper {
   padding: 2.5rem 5rem 5rem 5rem;
 }
@@ -145,6 +131,7 @@ main .filter {
   background: var(--tertiary-color);
   font-size: 0.75rem;
   font-weight: 500;
+  text-decoration: none;
   width: fit-content;
   border-radius: 15px;
   transition: 0.2s ease;
@@ -174,13 +161,22 @@ main .filter {
   position: fixed;
   place-self: center;
   flex-direction: column;
-  width: 35%;
+  width: 40rem;
   height: 80%;
   background: #222222;
   border-radius: 1rem;
   text-decoration: none;
   border: 2px solid transparent;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.popover .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .popover .icon {
@@ -192,28 +188,24 @@ main .filter {
   cursor: pointer;
 }
 
+.popover .card-image {
+  height: 25%;
+}
+
 .popover::backdrop {
   background-color: #0007;
   backdrop-filter: blur(3px);
 }
 
-.popover .content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-}
-
-.popover .card-image {
-  height: 25%;
-}
-
 @media (max-width: 1330px) {
   .card-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1150px) {
+  main div.title {
+    padding: 0 5rem 0 5rem;
   }
 }
 
@@ -223,17 +215,35 @@ main .filter {
   }
 }
 
+@media (max-width: 768px) {
+  .nav-list {
+    gap: 1rem;
+  }
+
+  .subtitle {
+    white-space: normal;
+  }
+}
+
 @media (max-width: 680px) {
   main div.title {
     padding: 0 2rem 0 2rem;
   }
 
   .subtitle {
-    text-wrap: wrap;
+    font-size: 1.2rem;
   }
 
   .display {
     font-size: 3.5rem;
+  }
+
+  main .filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 5rem 5rem 0 5rem;
   }
 
   .card-list {
@@ -242,5 +252,11 @@ main .filter {
 
   .card-wrapper {
     padding: 2.5rem 2.5rem 5rem 2.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-wrapper {
+    padding: 2.5rem 1rem 1rem 1rem;
   }
 }
