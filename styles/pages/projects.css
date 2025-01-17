@@ -160,10 +160,9 @@ main .filter {
   user-select: none;
   position: fixed;
   place-self: center;
-  flex-direction: column;
-  width: 40rem;
+  width: 70rem;
   height: 80%;
-  background: #222222;
+  background: var(--background-color);
   border-radius: 1rem;
   text-decoration: none;
   border: 2px solid transparent;
@@ -172,8 +171,6 @@ main .filter {
 
 .popover .content {
   position: relative;
-  width: 100%;
-  height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -188,8 +185,9 @@ main .filter {
   cursor: pointer;
 }
 
-.popover .card-image {
-  height: 25%;
+.popover .img {
+  height: 100%;
+  width: 25%;
 }
 
 .popover::backdrop {
