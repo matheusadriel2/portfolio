@@ -21,31 +21,31 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href="#">
+        <a href="#" aria-label="Matheus Adriel logo returns to the homepage">
           <img src="./assets/icons/Logo.svg" alt="Logo" id="logo" />
         </a>
         <ul class="nav-list">
           <hr />
           <li>
-            <a href="#about" class="item">
+            <a href="#about" aria-label="Seção Sobre" class="item">
               <span class="material-symbols-outlined nav-icon">account_circle</span>
               <p>Sobre</p>
             </a>
           </li>
           <li>
-            <a href="#skills" class="item">
+            <a href="#skills" aria-label="Seção Habilidades" class="item">
               <span class="material-symbols-outlined">bolt</span>
               <p>Skills</p>
             </a>
           </li>
           <li>
-            <a href="./projects.html" target="_blank" class="item">
+            <a href="./projects.html" aria-label="Seção Projetos" target="_blank" class="item">
               <span class="material-symbols-outlined">token</span>
               <p>Projetos</p>
             </a>
           </li>
           <li>
-            <a href="#contact" class="item">
+            <a href="#contact" aria-label="Seção Contatos" class="item">
               <span class="material-symbols-outlined">call</span>
               <p>Contato</p>
             </a>
@@ -102,9 +102,9 @@
               </div>
             </div>
             <div class="image">
-              <img id="profile-picture" src="./assets/img/profilepicture.jpg" alt="Matheus Adriel - Fotografia Pessoal" />
+              <img id="profile-picture" src="./assets/img/profilepicture.webp" alt="Matheus Adriel - Fotografia Pessoal" />
               <div class="notion">
-                <img src="./assets/img/notion-portrait.png" alt="" id="notion-avatar" />
+                <img src="./assets/img/notion-portrait.webp" alt="Retrato Cartoon" id="notion-avatar" />
               </div>
             </div>
           </div>
@@ -154,7 +154,9 @@
             <h1 id="projects-title" class="display">Projetos</h1>
             <p id="projects-subtitle">Últimas aplicações desenvolvidas</p>
           </div>
-          <a href="./projects.html" target="_blank" class="seemore material-symbols-outlined">arrow_circle_right</a>
+          <a href="./projects.html" target="_blank" aria-label="Abrir página de projetos em uma nova aba" class="seemore material-symbols-outlined"
+            >arrow_circle_right</a
+          >
         </div>
 
         <div class="projects-content">
@@ -162,8 +164,8 @@
             <div class="card-wrapper">
               <div class="card-list swiper-wrapper">
                 <div class="card-item swiper-slide">
-                  <a href="./projects.html#popover1" target="_blank" class="card-link">
-                    <img src="./assets/img/portfolio-banner.jpg" alt="Portfólio banner" class="card-image" />
+                  <a href="./projects.html#popover1" aria-label="Abrir projeto 1 em uma nova aba" target="_blank" class="card-link">
+                    <img src="./assets/img/portfolio-banner.webp" alt="Capa do projeto portfólio" class="card-image" />
                     <div class="card-content">
                       <div class="badges">
                         <p class="badge html-badge">HTML</p>
@@ -177,8 +179,8 @@
                 </div>
 
                 <div class="card-item swiper-slide">
-                  <a href="./projects.html#popover2" target="_blank" class="card-link">
-                    <img src="./assets/img/kofin-banner.jpg" alt="kofin banner" class="card-image" />
+                  <a href="./projects.html#popover2" aria-label="Abrir projeto 2 em uma nova aba" target="_blank" class="card-link">
+                    <img src="./assets/img/kofin-banner.webp" alt="Capa do projeto fintech kofin" class="card-image" />
                     <div class="card-content">
                       <div class="badges">
                         <p class="badge html-badge">HTML</p>
@@ -192,8 +194,8 @@
                 </div>
 
                 <div class="card-item swiper-slide">
-                  <a href="./projects.html#popover3" class="card-link">
-                    <img src="./assets/img/decoder-banner.jpg" alt="Decoder banner" class="card-image" />
+                  <a href="./projects.html#popover3" aria-label="Abrir projeto 3 em uma nova aba" class="card-link">
+                    <img src="./assets/img/decoder-banner.jpg" alt="Capa do projeto Decoder" class="card-image" />
                     <div class="card-content">
                       <div class="badges">
                         <p class="badge html-badge">HTML</p>
@@ -228,16 +230,16 @@
             <p id="social-text">SOCIAL</p>
             <div class="icons">
               <a href="https://wa.me/5519997232710">
-                <img src="./assets/icons/whatsapp.svg" alt="" />
+                <img src="./assets/icons/whatsapp.svg" alt="Ícone Whatsapp" />
               </a>
               <a href="https://github.com/matheusadriel2">
-                <img src="./assets/icons/github.svg" alt="" />
+                <img src="./assets/icons/github.svg" alt="Ícone GitHub" />
               </a>
               <a href="https://www.linkedin.com/in/matheusadriel/">
-                <img src="./assets/icons/linkedin.svg" alt="" />
+                <img src="./assets/icons/linkedin.svg" alt="Ícone LinkedIn" />
               </a>
               <a href="https://discordapp.com/users/879930913058861107">
-                <img src="./assets/icons/discord.svg" alt="" />
+                <img src="./assets/icons/discord.svg" alt="Ícone Discord" />
               </a>
             </div>
           </div>
@@ -254,7 +256,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/navbar.js"></script>
 
-    <!--  SwiperJS Script -->
     <script>
       const swiper = new Swiper(".card-wrapper", {
         loop: true,
@@ -292,7 +293,6 @@
       });
     </script>
 
-    <!-- ScrollRevealJS Script -->
     <script>
       ScrollReveal({
         reset: false,
