@@ -82,10 +82,12 @@ main .filter {
     pointer-events: none;
   }
 }
+
 .card-link {
   user-select: none;
   display: flex;
   flex-direction: column;
+  height: 100%;
   background: #222222;
   border-radius: 15px;
   text-decoration: none;
@@ -137,18 +139,6 @@ main .filter {
   transition: 0.2s ease;
 }
 
-.html-badge {
-  background: var(--html-color);
-}
-
-.css-badge {
-  background: var(--css-color);
-}
-
-.js-badge {
-  background: #f0db4f;
-}
-
 .card-title {
   font-size: 1.5rem;
   font-weight: 500;
@@ -160,20 +150,96 @@ main .filter {
   user-select: none;
   position: fixed;
   place-self: center;
-  width: 70rem;
   height: 80%;
+  width: 70rem;
   background: var(--background-color);
   border-radius: 1rem;
   text-decoration: none;
+  outline: none;
   border: 2px solid transparent;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
 }
 
 .popover .content {
-  position: relative;
-  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.content .info {
+  width: 80%;
+  padding: 3rem;
+}
+
+.info .heading {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+}
+
+.heading .title {
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.heading .subtitle {
+  color: var(--quaternary-color);
+  line-height: 30px;
+}
+
+.info .divider {
+  margin: 2rem 0;
+}
+
+.info .data {
+  display: flex;
+  flex-direction: column;
+}
+
+.info .data p {
+  color: var(--primary-color);
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  color: var(--highlight-color);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 7.5px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  &:hover {
+    transform: scale(1.035);
+  }
+}
+
+.data .technologies {
+  display: flex;
+  gap: 1rem;
+}
+
+.technologies img {
+  aspect-ratio: 1 / 1;
+  height: 40px;
 }
 
 .popover .icon {
@@ -187,12 +253,31 @@ main .filter {
 
 .popover .img {
   height: 100%;
-  width: 25%;
+  width: 40%;
+  background-color: #252a2e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  place-self: end;
+}
+
+#img1 {
+  background-image: url(../../assets/img/portfolio.gif);
+  background-position: 45%;
+}
+
+#img2 {
+  background-image: url(../../assets/img/kofin.gif);
+  background-position: 45%;
+}
+
+#img3 {
+  background-image: url(../../assets/img/decoder.gif);
+  background-position: 50%;
 }
 
 .popover::backdrop {
-  background-color: #0007;
-  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
 }
 
 @media (max-width: 1330px) {
@@ -201,9 +286,37 @@ main .filter {
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1150px) and (orientation: portrait) {
   main div.title {
     padding: 0 5rem 0 5rem;
+  }
+
+  .popover .content {
+    flex-direction: column;
+  }
+
+  .content .info {
+    width: 100%;
+  }
+
+  .popover .img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #img1 {
+    background-image: url(../../assets/img/portfolio-banner.jpg);
+  }
+
+  #img2 {
+    background-image: url(../../assets/img/kofin-banner.jpg);
+  }
+
+  #img3 {
+    background-image: url(../../assets/img/decoder-landscape.gif);
+    background-size: 50%;
   }
 }
 

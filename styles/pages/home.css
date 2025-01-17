@@ -334,22 +334,12 @@
 }
 
 .badge {
-  color: var(--primary-color);
   padding: 0.25rem 0.75rem;
   margin: 1rem 0 1.1rem;
-  background: var(--tertiary-color);
   font-size: 0.75rem;
   width: fit-content;
   border-radius: 15px;
   transition: 0.2s ease;
-}
-
-#html-badge {
-  background: var(--html-color);
-}
-
-#css-badge {
-  background: var(--css-color);
 }
 
 .card-title {
@@ -623,5 +613,4 @@
   #home-title {
     font-size: 3.5rem;
   }
-
 }
