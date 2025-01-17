@@ -83,6 +83,7 @@
               <option value="css">CSS</option>
               <option value="js">JavaScript</option>
               <option value="java">Java</option>
+              <option value="bs">Bootstrap</option>
             </select>
           </div>
 
@@ -100,9 +101,10 @@
           <div class="container">
             <div class="card-wrapper">
               <div class="card-list">
+                <!-- First Card -->
                 <div class="card-item html css js front-end">
                   <button popovertarget="popover1" class="card-link">
-                    <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
+                    <img src="./assets/img/portfolio-banner.jpg" alt="" class="card-image" />
                     <div class="card-content">
                       <div class="badges">
                         <p class="badge html-badge">HTML</p>
@@ -110,88 +112,177 @@
                         <p class="badge js-badge">JavaScript</p>
                       </div>
                       <h2 class="card-title">Portfólio</h2>
-                      <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis aperiam ducimus voluptates! Quibusdam quisquam hic ut eos
-                        expedita fugit error sunt odio omnis ab, doloribus, ullam blanditiis magni quae!
-                      </p>
+                      <p class="description">Plataforma online criada para apresentação pessoal e exposição de projetos.</p>
                     </div>
                   </button>
                   <dialog class="popover" id="popover1" popover="manual">
                     <div class="content">
+                      <div class="info">
+                        <div class="heading">
+                          <h1 class="title">Portfólio</h1>
+                          <h3 class="subtitle">Plataforma online para apresentação pessoal e exposição de projetos</h3>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="data">
+                          <div>
+                            <p>
+                              Portfólio desenvolvido com intuito de realizar minha apresentação <span class="highlight">pessoal e profissional</span>, tal como
+                              expor os demais projetos que desenvolvo e participo na área de tecnologia.
+                            </p>
+                            <p>
+                              O projeto foi arquitetado e estruturado pensando na experiência final do usuário, com o propósito de ser simples e acolhedor.
+                              Desenvolvido utilizando <span class="highlight">HTML5</span>, <span class="highlight">CSS3</span> e
+                              <span class="highlight">JavaScript</span> nativo.
+                            </p>
+                            <div class="buttons">
+                              <a href="https://github.com/matheusadriel2/portfolio" target="_blank" class="rep">
+                                <span class="material-symbols-outlined">star</span>Repositório
+                              </a>
+                              <a href="https://portfolio-dusky-tau-27.vercel.app/" target="_blank" class="dep"
+                                ><span class="material-symbols-outlined">exit_to_app</span>Deploy</a
+                              >
+                            </div>
+                          </div>
+                          <div class="technologies">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                          </div>
+                        </div>
+                      </div>
                       <button popovertarget="popover1" popovertargetaction="hide" class="icon">❌</button>
+                      <div class="img" id="img1"></div>
                     </div>
-                    <div><img src="./assets/img/projeto-194812.jpg" alt="" class="img" /></div>
                   </dialog>
                 </div>
 
-                <div class="card-item html css js front-end">
+                <!-- Second Card -->
+                <div class="card-item html css bs front-end">
                   <button popovertarget="popover2" class="card-link">
-                    <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
+                    <img src="./assets/img/kofin-banner.jpg" alt="" class="card-image" />
                     <div class="card-content">
                       <div class="badges">
                         <p class="badge html-badge">HTML</p>
                         <p class="badge css-badge">CSS</p>
-                        <p class="badge js-badge">JavaScript</p>
+                        <p class="badge bs-badge">Bootstrap</p>
                       </div>
-                      <h2 class="card-title">Portfólio</h2>
+                      <h2 class="card-title">kofin</h2>
                       <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis aperiam ducimus voluptates! Quibusdam quisquam hic ut eos
-                        expedita fugit error sunt odio omnis ab, doloribus, ullam blanditiis magni quae!
+                        Kofin é uma plataforma desenvolvida como parte de um projeto acadêmico, oferecendo soluções inteligentes para gerenciamento de finanças,
+                        investimentos e educação financeira.
                       </p>
                     </div>
                   </button>
                   <dialog class="popover" id="popover2" popover="manual">
                     <div class="content">
-                      <button popovertarget="popover2" popovertargetaction="hide" class="icon">❌</button>
-                      <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
+                      <div class="info">
+                        <div class="heading">
+                          <h1 class="title">kofin</h1>
+                          <h3 class="subtitle">Aplicação web e mobile para gerenciamento financeiro</h3>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="data">
+                          <div>
+                            <p>
+                              Kofin é uma plataforma desenvolvida como parte de um projeto acadêmico, oferecendo soluções inteligentes para
+                              <span class="highlight">gerenciamento de finanças</span>, <span class="highlight">investimentos</span>
+                              e
+                              <span class="highlight">educação financeira</span>.
+                            </p>
+                            <p>
+                              Foi desenvolvido utilizando <span class="highlight">HTML</span>, <span class="highlight">CSS</span> e
+                              <span class="highlight">Bootstrap</span>, além de boas práticas de <span class="highlight">UX/UI</span>.
+                            </p>
+                            <div class="buttons">
+                              <a href="https://github.com/matheusadriel2/kofin" target="_blank" class="rep">
+                                <span class="material-symbols-outlined">star</span>Repositório
+                              </a>
+                              <a href="https://matheusadriel2.github.io/kofin/" target="_blank" class="dep"
+                                ><span class="material-symbols-outlined">exit_to_app</span>Deploy</a
+                              >
+                            </div>
+                          </div>
+                          <div class="technologies">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                          </div>
+                        </div>
+                      </div>
+                      <button popovertarget="popover1" popovertargetaction="hide" class="icon">❌</button>
+                      <div class="img" id="img2"></div>
                     </div>
                   </dialog>
                 </div>
 
+                <!-- Third Card -->
                 <div class="card-item html css js front-end">
                   <button popovertarget="popover3" class="card-link">
-                    <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
+                    <img src="./assets/img/decoder-banner.jpg" alt="Decoder banner" class="card-image" />
                     <div class="card-content">
                       <div class="badges">
                         <p class="badge html-badge">HTML</p>
                         <p class="badge css-badge">CSS</p>
                         <p class="badge js-badge">JavaScript</p>
                       </div>
-                      <h2 class="card-title">Portfólio</h2>
+                      <h2 class="card-title">Decoder</h2>
                       <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis aperiam ducimus voluptates! Quibusdam quisquam hic ut eos
-                        expedita fugit error sunt odio omnis ab, doloribus, ullam blanditiis magni quae!
+                        Aplicação web desenvolvida como parte do desafio do programa ONE da Oracle, em parceria com a Alura, que consiste em encriptar e
+                        desincriptar mensagens.
                       </p>
                     </div>
                   </button>
                   <dialog class="popover" id="popover3" popover="manual">
                     <div class="content">
-                      <button popovertarget="popover3" popovertargetaction="hide" class="icon">❌</button>
-                      <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
-                    </div>
-                  </dialog>
-                </div>
+                      <div class="info">
+                        <div class="heading">
+                          <h1 class="title">Decoder</h1>
+                          <h3 class="subtitle">Encriptador e decodificador de mensagens</h3>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="data">
+                          <div>
+                            <p>
+                              Aplicação web desenvolvida como parte do desafio do programa <span class="highlight">ONE</span> da
+                              <span class="highlight">Oracle</span>, em parceria com a Alura, que consiste em encriptar e desincriptar mensagens.
+                            </p>
+                            <p>
+                              Desenvolvido utilizando <span class="highlight">HTML</span>, <span class="highlight">CSS</span> e
+                              <span class="highlight">JavaScript</span> para praticar lógica de programação. O HTML estrutura a página, o CSS estiliza os
+                              elementos de forma atraente e responsiva, e o JavaScript adiciona interatividade. Primeiro projeto feito para desenvolver o
+                              raciocínio lógico e as habilidades no desenvolvimento web.
+                            </p>
+                            <div class="buttons">
+                              <a href="https://github.com/matheusadriel2/decoder" target="_blank" class="rep">
+                                <span class="material-symbols-outlined">star</span>Repositório
+                              </a>
+                              <a href="https://matheusadriel2.github.io/decoder/" target="_blank" class="dep"
+                                ><span class="material-symbols-outlined">exit_to_app</span>Deploy</a
+                              >
+                            </div>
+                          </div>
+                          <div class="technologies">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
 
-                <div class="card-item html css js front-end">
-                  <button popovertarget="popover4" class="card-link">
-                    <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
-                    <div class="card-content">
-                      <div class="badges">
-                        <p class="badge html-badge">HTML</p>
-                        <p class="badge css-badge">CSS</p>
-                        <p class="badge js-badge">JavaScript</p>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                          </div>
+                        </div>
                       </div>
-                      <h2 class="card-title">Portfólio</h2>
-                      <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis aperiam ducimus voluptates! Quibusdam quisquam hic ut eos
-                        expedita fugit error sunt odio omnis ab, doloribus, ullam blanditiis magni quae!
-                      </p>
-                    </div>
-                  </button>
-                  <dialog class="popover" id="popover4" popover="manual">
-                    <div class="content">
-                      <button popovertarget="popover4" popovertargetaction="hide" class="icon">❌</button>
-                      <img src="./assets/img/projeto-194812.jpg" alt="" class="card-image" />
+                      <div class="divider"></div>
+                      <button popovertarget="popover3" popovertargetaction="hide" class="icon">❌</button>
+                      <div class="img" id="img3"></div>
                     </div>
                   </dialog>
                 </div>
@@ -223,24 +314,24 @@
     });
 
     ScrollReveal().reveal("#logo", {
-      delay: 500,
+      delay: 250,
       origin: "left",
     });
     ScrollReveal().reveal(".mobile-menu", {
-      delay: 500,
+      delay: 250,
       origin: "right",
     });
     ScrollReveal().reveal(".nav-list", {
-      delay: 750,
+      delay: 500,
       origin: "top",
       interval: 200,
     });
     ScrollReveal().reveal(".title .content, .filter", {
-      delay: 500,
+      delay: 250,
       origin: "bottom",
     });
     ScrollReveal().reveal(".card-list", {
-      delay: 750,
+      delay: 500,
       origin: "bottom",
     });
   </script>
@@ -253,6 +344,33 @@
       delay: 50,
     });
 
-    typewriter.pauseFor(2500).typeString("Confira alguns dos projetos que desenvolvi.").start();
+    typewriter.pauseFor(2000).typeString("Confira alguns dos projetos que desenvolvi.").start();
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hash = window.location.hash;
+      if (hash) {
+        const popoverId = hash.substring(1);
+        const dialog = document.getElementById(popoverId);
+
+        if (dialog && typeof dialog.showModal === "function") {
+          dialog.showModal();
+        }
+      }
+    });
+
+    const closeButtons = document.querySelectorAll('button[popovertargetaction="hide"]');
+    closeButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const targetPopoverId = this.getAttribute("popovertarget");
+        const targetDialog = document.getElementById(targetPopoverId);
+        if (targetDialog && typeof targetDialog.close === "function") {
+          targetDialog.close();
+        }
+
+        history.replaceState(null, null, " ");
+      });
+    });
   </script>
 </html>
