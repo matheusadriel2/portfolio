@@ -1,30 +1,16 @@
 <a id="readme-top"></a>
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/matheusadriel2/portfolio">
-    <img src="./assets/icons/favicon.png" alt="Logo" width="80" height="80">
-  </a>
 
-<h3 align="center">Portfolio</h3>
 
-  <p align="center">
-    Portfolio developed with the aim of presenting myself personally and professionally,<br/> as well as presenting other projects that I develop and participate in in the tech area.
-    <br />
-    <br />
-    <br />
-  </p>
-</div>
-
-<!-- ABOUT THE PROJECT -->
-## About the project
+<h1 >Portfolio</h1>
 
 [![Portfolio ScreenShot][screenshot]](https://matheusadriel2.github.io/portfolio/index.html)
 
-The project was designed and structured with the user's final experience in mind, with the aim of being simple and welcoming.<br />
+Project developed with the aim of presenting myself personally and professionally, as well as presenting other projects that I develop and participate in in the tech area.<br><br>
+The portfolio was designed and structured with the user's final experience in mind, with the aim of being simple and welcoming.<br>
+<br>
 
-### Built with
+## Built with
 
 * ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 * ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -53,7 +39,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 4. Push to the Branch (`git push origin feature/newFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">^</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
@@ -62,4 +48,4 @@ Matheus Adriel · matheusadrieldsc@gmail.com
 
 Project Link: [https://github.com/matheusadriel2/portfolio](https://github.com/matheusadriel2/portfolio)
 
-[screenshot]: /assets/img/portfolio-banner.webp
+[screenshot]: /assets/img/pagepreview.webp
