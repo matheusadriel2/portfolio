@@ -12,12 +12,12 @@ The portfolio was designed and structured with the user's final experience in mi
 
 ## Built with
 
-* ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-* ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-* ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 <br />
 
-<!-- ROADMAP -->
+
 ## Sections
 
 - [ ] Homepage
@@ -28,7 +28,7 @@ The portfolio was designed and structured with the user's final experience in mi
 - [ ] Projects page
 <br />
 
-<!-- CONTRIBUTING -->
+
 ## Contributing
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request.
@@ -41,11 +41,11 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 <p align="right">(<a href="#readme-top">^</a>)</p>
 
-<!-- CONTACT -->
+
 ## Contact
 
-Matheus Adriel · matheusadrieldsc@gmail.com
+📧 Mail · matheusadrieldsc@gmail.com
 
-Project Link: [https://github.com/matheusadriel2/portfolio](https://github.com/matheusadriel2/portfolio)
+🔗 Deploy: [https://github.com/matheusadriel2/portfolio](https://github.com/matheusadriel2/portfolio)
 
 [screenshot]: /assets/img/pagepreview.webp
