@@ -2,14 +2,13 @@
 <html lang="pt-BR" class="sr">
   <head>
     <meta charset="UTF-8" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>Matheus Adriel</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/components/navbar.css" />
     <link rel="stylesheet" href="./styles/components/footer.css" />
     <link rel="stylesheet" href="./styles/pages/home.css" />
@@ -172,27 +171,12 @@
               <div class="card-list swiper-wrapper">
                 <div class="card-item swiper-slide">
                   <a href="./projects.html#popover1" aria-label="Abrir projeto 1 em uma nova aba" target="_blank" class="card-link">
-                    <img src="./assets/img/portfolio-banner.webp" alt="Capa do projeto portfólio" class="card-image" />
-                    <div class="card-content">
-                      <div class="badges">
-                        <p class="badge html-badge">HTML</p>
-                        <p class="badge css-badge">CSS</p>
-                        <p class="badge js-badge">JavaScript</p>
-                      </div>
-                      <h2 class="card-title">Portfólio</h2>
-                      <button class="card-button material-symbols-outlined">arrow_forward</button>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="card-item swiper-slide">
-                  <a href="./projects.html#popover2" aria-label="Abrir projeto 2 em uma nova aba" target="_blank" class="card-link">
                     <img src="./assets/img/kofin-banner.webp" alt="Capa do projeto fintech kofin" class="card-image" />
                     <div class="card-content">
                       <div class="badges">
-                        <p class="badge html-badge">HTML</p>
-                        <p class="badge css-badge">CSS</p>
-                        <p class="badge bs-badge">Bootstrap</p>
+                        <p class="badge java-badge">Java</p>
+                        <p class="badge oracledb-badge">OracleDB</p>
+                        <p class="badge jdbc-badge">JDBC</p>
                       </div>
                       <h2 class="card-title">kofin</h2>
                       <button class="card-button material-symbols-outlined">arrow_forward</button>
@@ -201,7 +185,7 @@
                 </div>
 
                 <div class="card-item swiper-slide">
-                  <a href="./projects.html#popover3" aria-label="Abrir projeto 3 em uma nova aba" class="card-link">
+                  <a href="./projects.html#popover2" aria-label="Abrir projeto 2 em uma nova aba" class="card-link">
                     <img src="./assets/img/decoder-banner.jpg" alt="Capa do projeto Decoder" class="card-image" />
                     <div class="card-content">
                       <div class="badges">
@@ -265,9 +249,10 @@
 
     <script>
       const swiper = new Swiper(".card-wrapper", {
-        loop: true,
-        slidesPerView: 3,
+        loop: slidesCount > 2,
+        watchOverflow: true,
         spaceBetween: 50,
+        slidesPerView: Math.min(3, slidesCount),
 
         autoplay: {
           delay: 5000,

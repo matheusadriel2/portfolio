@@ -1,1 +1,357 @@
-main div.void{background-color:var(--background-color);width:100%;height:6.5rem}body.modal-open{overflow:hidden}main{flex:1}.nav-list{gap:3rem}main div.title{display:flex;flex-direction:column;justify-content:center;background-color:#fff;width:100%;height:30rem;padding:0 9rem 0 9rem}.title div{overflow:hidden;box-sizing:border-box;white-space:nowrap;width:100%}.subtitle{overflow:hidden;line-height:1.75rem;font-size:1.5rem;color:var(--tertiary-color)}main .filter{display:flex;align-items:center;justify-content:end;gap:1rem;padding:5rem 5rem 0 5rem}.filter #filter{padding:.5rem 1rem .5rem .5rem;border:none;color:var(--primary-color);background-color:var(--secondary-color);border-left:3px solid #8f8f8f;outline:none;border-radius:0;cursor:pointer}.card-wrapper{padding:2.5rem 5rem 5rem 5rem}.card-list{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}.card-item{position:relative;list-style:none;width:100%;opacity:1;transform:translateY(0);transition:opacity 0.3s ease,transform 0.3s ease;&.hidden{opacity:0;transform:translateY(20px);pointer-events:none}}.card-link{user-select:none;display:flex;flex-direction:column;height:100%;background:#222;border-radius:15px;text-decoration:none;border:2px solid #fff0;box-shadow:0 10px 10px rgb(0 0 0 / .05);transition:0.2s ease;&:hover{border-color:var(--secondary-color);transform:scale(1.02);cursor:pointer}}.card-content{text-align:start;padding:1.5rem}.description{color:var(--primary-color);line-height:20px}.card-image{width:100%;aspect-ratio:16 / 9;object-fit:cover;border-radius:15px 15px 0 0;margin:0}.badges{display:flex;justify-content:flex-start;flex-direction:row;gap:.75rem}.badge{color:var(--background-color);padding:.25rem .75rem;margin:1rem 0 1.1rem;background:var(--tertiary-color);font-size:.75rem;font-weight:500;text-decoration:none;width:fit-content;border-radius:15px;transition:0.2s ease}.card-title{font-size:1.5rem;font-weight:500;margin-bottom:1rem;color:var(--primary-color)}.popover{user-select:none;position:fixed;place-self:center;height:80%;width:70rem;background:var(--background-color);border-radius:1rem;text-decoration:none;outline:none;border:2px solid #fff0;box-shadow:0 10px 10px rgb(0 0 0 / .05)}.popover .content{display:flex;width:100%;height:100%}.content .info{width:80%;padding:3rem}.info .heading{display:flex;flex-direction:column;gap:.5rem}.heading .title{color:var(--primary-color);font-size:3rem;font-weight:700}.heading .subtitle{color:var(--quaternary-color);line-height:30px}.info .divider{margin:2rem 0}.info .data{display:flex;flex-direction:column}.info .data p{color:var(--primary-color);font-size:1rem;line-height:1.75rem;margin-bottom:1.5rem}.highlight{color:var(--highlight-color)}.buttons{display:flex;gap:1rem;margin-bottom:2rem}.buttons a{display:flex;justify-content:center;align-items:center;background-color:var(--secondary-color);color:var(--primary-color);gap:.25rem;padding:.5rem .75rem;border-radius:7.5px;text-decoration:none;border:none;cursor:pointer;transition:0.2s ease;&:hover{transform:scale(1.035)}}.data .technologies{display:flex;gap:1rem}.technologies img{aspect-ratio:1 / 1;height:40px}.popover .icon{position:absolute;top:1rem;right:1rem;background-color:#fff0;border:none;cursor:pointer}.popover .img{height:100%;width:40%;background-color:#252a2e;background-repeat:no-repeat;background-size:cover;place-self:end}#img1{background-image:url(../../assets/img/portfolio.gif);background-position:45%}#img2{background-image:url(../../assets/img/kofin.gif);background-position:45%}#img3{background-image:url(../../assets/img/decoder.gif);background-position:50%}.popover::backdrop{background-color:rgb(0 0 0 / .6);backdrop-filter:blur(10px)}@media (max-width:1330px){.card-list{grid-template-columns:repeat(3,1fr)}}@media (max-width:1150px) and (orientation:portrait){main div.title{padding:0 5rem 0 5rem}.popover .content{flex-direction:column}.content .info{width:100%}.popover .img{height:100%;width:100%;background-repeat:no-repeat;background-size:cover}#img1{background-image:url(../../assets/img/portfolio-banner.webp)}#img2{background-image:url(../../assets/img/kofin-banner.webp)}#img3{background-image:url(../../assets/img/decoder-landscape.gif);background-size:50%}}@media (max-width:1020px){.card-list{grid-template-columns:repeat(2,1fr)}}@media (max-width:768px){.nav-list{gap:1rem}.subtitle{white-space:normal}}@media (max-width:680px){main div.title{padding:0 2rem 0 2rem}.subtitle{font-size:1.2rem}.display{font-size:3.5rem}main .filter{display:flex;align-items:center;justify-content:center;gap:1rem;padding:5rem 5rem 0 5rem}.card-list{grid-template-columns:repeat(1,1fr)}.card-wrapper{padding:2.5rem 2.5rem 5rem 2.5rem}}@media (max-width:360px){.card-wrapper{padding:2.5rem 1rem 1rem 1rem}}
+main div.void {
+    background-color: var(--background-color);
+    width: 100%;
+    height: 6.5rem
+}
+
+body.modal-open {
+    overflow: hidden
+}
+
+main {
+    flex: 1
+}
+
+.nav-list {
+    gap: 3rem
+}
+
+main div.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    height: 30rem;
+    padding: 0 9rem 0 9rem
+}
+
+.title div {
+    overflow: hidden;
+    box-sizing: border-box;
+    white-space: nowrap;
+    width: 100%
+}
+
+.subtitle {
+    overflow: hidden;
+    line-height: 1.75rem;
+    font-size: 1.5rem;
+    color: var(--tertiary-color)
+}
+
+main .filter {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    padding: 5rem 5rem 0 5rem
+}
+
+.filter #filter {
+    padding: .5rem 1rem .5rem .5rem;
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-left: 3px solid #8f8f8f;
+    outline: none;
+    border-radius: 0;
+    cursor: pointer
+}
+
+.card-wrapper {
+    padding: 2.5rem 5rem 5rem 5rem
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem
+}
+
+.card-item {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    &.hidden {
+        opacity: 0;
+        transform: translateY(20px);
+        pointer-events: none
+    }
+}
+
+.card-link {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #222;
+    border-radius: 15px;
+    text-decoration: none;
+    border: 2px solid #fff0;
+    box-shadow: 0 10px 10px rgb(0 0 0 / .05);
+    transition: 0.2s ease;
+    &:hover {
+        border-color: var(--secondary-color);
+        transform: scale(1.02);
+        cursor: pointer
+    }
+}
+
+.card-content {
+    text-align: start;
+    padding: 1.5rem
+}
+
+.description {
+    color: var(--primary-color);
+    line-height: 20px
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    margin: 0
+}
+
+.badges {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: .75rem
+}
+
+.badge {
+    color: var(--background-color);
+    padding: .25rem .75rem;
+    margin: 1rem 0 1.1rem;
+    background: var(--tertiary-color);
+    font-size: .75rem;
+    font-weight: 500;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 15px;
+    transition: 0.2s ease
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--primary-color)
+}
+
+.popover {
+    user-select: none;
+    position: fixed;
+    place-self: center;
+    height: 80%;
+    width: 70rem;
+    background: var(--background-color);
+    border-radius: 1rem;
+    text-decoration: none;
+    outline: none;
+    border: 2px solid #fff0;
+    box-shadow: 0 10px 10px rgb(0 0 0 / .05)
+}
+
+.popover .content {
+    display: flex;
+    width: 100%;
+    height: 100%
+}
+
+.content .info {
+    width: 80%;
+    padding: 3rem
+}
+
+.info .heading {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem
+}
+
+.heading .title {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: 700
+}
+
+.heading .subtitle {
+    color: var(--quaternary-color);
+    line-height: 30px
+}
+
+.info .divider {
+    margin: 2rem 0
+}
+
+.info .data {
+    display: flex;
+    flex-direction: column
+}
+
+.info .data p {
+    color: var(--primary-color);
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem
+}
+
+.highlight {
+    color: var(--highlight-color)
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem
+}
+
+.buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    gap: .25rem;
+    padding: .5rem .75rem;
+    border-radius: 7.5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    &:hover {
+        transform: scale(1.035)
+    }
+}
+
+.data .technologies {
+    display: flex;
+    gap: 1rem
+}
+
+.technologies img {
+    aspect-ratio: 1 / 1;
+    height: 40px
+}
+
+.popover .icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #fff0;
+    border: none;
+    cursor: pointer
+}
+
+.popover .img {
+    height: 100%;
+    width: 40%;
+    background-color: #252a2e;
+    background-repeat: no-repeat;
+    background-size: cover;
+    place-self: end
+}
+
+#img1 {
+    background-image: url(../../assets/img/kofin2.gif);
+    background-position: 50%;
+    background-size: 200%;
+}
+
+#img2 {
+    background-image: url(../../assets/img/decoder.gif);
+    background-size: 200%;
+    background-position: 50%;
+}
+
+.popover::backdrop {
+    background-color: rgb(0 0 0 / .6);
+    backdrop-filter: blur(10px)
+}
+
+@media (max-width:1330px) {
+    .card-list {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media (max-width:1150px) and (orientation:portrait) {
+    main div.title {
+        padding: 0 5rem 0 5rem
+    }
+    .popover .content {
+        flex-direction: column
+    }
+    .content .info {
+        width: 100%
+    }
+    .popover .img {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+    #img1 {
+        background-image: url(../../assets/img/kofin-banner.webp);
+        background-size: 100%;
+        background-position-y: 90%;
+    }
+    #img2 {
+        background-image: url(../../assets/img/decoder-landscape.gif);
+        background-size: 50%
+    }
+}
+
+@media (max-width:1020px) {
+    .card-list {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (max-width:768px) {
+    .nav-list {
+        gap: 1rem
+    }
+    .subtitle {
+        white-space: normal
+    }
+}
+
+@media (max-width:680px) {
+    main div.title {
+        padding: 0 2rem 0 2rem
+    }
+    .subtitle {
+        font-size: 1.2rem
+    }
+    .display {
+        font-size: 3.5rem
+    }
+    main .filter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 5rem 5rem 0 5rem
+    }
+    .card-list {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .card-wrapper {
+        padding: 2.5rem 2.5rem 5rem 2.5rem
+    }
+}
+
+@media (max-width:360px) {
+    .card-wrapper {
+        padding: 2.5rem 1rem 1rem 1rem
+    }
+}
