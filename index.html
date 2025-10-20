@@ -7,7 +7,6 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/components/navbar.css" />
     <link rel="stylesheet" href="./styles/components/footer.css" />
@@ -156,13 +155,6 @@
             <h1 id="projects-title" class="display">Projetos</h1>
             <p id="projects-subtitle">Últimas aplicações desenvolvidas</p>
           </div>
-          <a
-            href="./projects.html"
-            target="_blank"
-            aria-label="Abrir página de projetos em uma nova aba"
-            class="seemore material-symbols-outlined"
-            >arrow_circle_right</a
-          >
         </div>
 
         <div class="projects-content">
@@ -170,7 +162,7 @@
             <div class="card-wrapper">
               <div class="card-list swiper-wrapper">
                 <div class="card-item swiper-slide">
-                  <a href="./projects.html#popover1" aria-label="Abrir projeto 1 em uma nova aba" target="_blank" class="card-link">
+                  <a class="card-link">
                     <img src="./assets/img/kofin-banner.webp" alt="Capa do projeto fintech kofin" class="card-image" />
                     <div class="card-content">
                       <div class="badges">
@@ -179,21 +171,6 @@
                         <p class="badge jdbc-badge">JDBC</p>
                       </div>
                       <h2 class="card-title">kofin</h2>
-                      <button class="card-button material-symbols-outlined">arrow_forward</button>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="card-item swiper-slide">
-                  <a href="./projects.html#popover2" aria-label="Abrir projeto 2 em uma nova aba" class="card-link">
-                    <img src="./assets/img/decoder-banner.jpg" alt="Capa do projeto Decoder" class="card-image" />
-                    <div class="card-content">
-                      <div class="badges">
-                        <p class="badge html-badge">HTML</p>
-                        <p class="badge css-badge">CSS</p>
-                        <p class="badge js-badge">JavaScript</p>
-                      </div>
-                      <h2 class="card-title">Decoder</h2>
                       <button class="card-button material-symbols-outlined">arrow_forward</button>
                     </div>
                   </a>
@@ -244,46 +221,7 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/navbar.js"></script>
-
-    <script>
-      const swiper = new Swiper(".card-wrapper", {
-        loop: slidesCount > 2,
-        watchOverflow: true,
-        spaceBetween: 50,
-        slidesPerView: Math.min(3, slidesCount),
-
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        },
-
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
-        },
-
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
 
     <script>
       ScrollReveal({
