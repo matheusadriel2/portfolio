@@ -32,9 +32,9 @@ section {
   --secondary-color: #313131;
   --tertiary-color: #595959;
   --quaternary-color: #9c9c9c;
-  --background-color: #121212;
-  --highlight-color: #b17457;
-  --tone-color: #8a553d;
+  --background-color: #000000;
+  --highlight-color: #ffc300;
+  --tone-color: #ffb700;
   --html-color: #de4a24;
   --css-color: #1695cf;
   --js-color: #f0db4f;
@@ -106,6 +106,16 @@ section {
 }
 
 .jwt-badge {
+  background: var(--background-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.kotlin-badge {
+  background: var(--bs-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.outros-badge {
   background: var(--background-color) !important;
   color: var(--primary-color) !important;
 }

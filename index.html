@@ -38,7 +38,7 @@
             </a>
           </li>
           <li>
-            <a href="./projects.html" aria-label="Seção Projetos" target="_blank" class="item">
+            <a href="#projects" aria-label="Seção Projetos" class="item">
               <span class="material-symbols-outlined">token</span>
               <p>Projetos</p>
             </a>
@@ -157,33 +157,10 @@
           </div>
         </div>
 
-        <div class="projects-content">
-          <div class="container swiper">
-            <div class="card-wrapper">
-              <div class="card-list swiper-wrapper">
-                <div class="card-item swiper-slide">
-                  <a class="card-link">
-                    <img src="./assets/img/kofin-banner.webp" alt="Capa do projeto fintech kofin" class="card-image" />
-                    <div class="card-content">
-                      <div class="badges">
-                        <p class="badge java-badge">Java</p>
-                        <p class="badge oracledb-badge">OracleDB</p>
-                        <p class="badge jdbc-badge">JDBC</p>
-                      </div>
-                      <h2 class="card-title">kofin</h2>
-                      <button class="card-button material-symbols-outlined">arrow_forward</button>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </div>
+        <div class="projects-grid"></div>
       </section>
 
-      <div id="contact">
+      <section id="contact">
         <div class="content">
           <div class="contact">
             <p id="contact-text">CONTATO</p>
@@ -212,7 +189,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer>
@@ -222,7 +199,8 @@
     </footer>
 
     <script src="./scripts/navbar.js"></script>
-
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/finisher-header.es5.min.js"></script>
     <script>
       ScrollReveal({
         reset: false,
@@ -258,6 +236,37 @@
         origin: "bottom",
       });
       ScrollReveal().reveal(".bold", { delay: 750, origin: "bottom" });
+    </script>
+    <script type="text/javascript">
+      new FinisherHeader({
+        count: 12,
+        size: {
+          min: 392,
+          max: 1500,
+          pulse: 0.3,
+        },
+        speed: {
+          x: {
+            min: 0.1,
+            max: 0.6,
+          },
+          y: {
+            min: 0.1,
+            max: 0.6,
+          },
+        },
+        colors: {
+          background: "#000000",
+          particles: ["#383838", "#000000", "#828282", "#000000", "#222222"],
+        },
+        blending: "overlay",
+        opacity: {
+          center: 0.5,
+          edge: 0.05,
+        },
+        skew: 0.1,
+        shapes: ["c"],
+      });
     </script>
   </body>
 </html>
