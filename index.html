@@ -60,16 +60,15 @@
 
     <main>
       <section id="home">
-        <div>
-          <div class="background-image"></div>
+        <div class="home-div">
+          <div class="title">
+            <h1 class="display" id="home-title">MATHEUS</h1>
+            <h1 class="display" id="home-title">ADRIEL</h1>
+          </div>
           <div class="container">
             <div class="content">
-              <div class="title">
-                <h1 class="display" id="home-title">MATHEUS</h1>
-                <h1 class="display" id="home-title">ADRIEL</h1>
-              </div>
               <div class="info">
-                <p id="home-subtitle">desenvolvedor fullstack.</p>
+                <p id="home-subtitle">desenvolvedor fullstack</p>
               </div>
             </div>
             <div class="autoRotateAnimation" id="profile-star">
@@ -235,6 +234,7 @@
         delay: 250,
         origin: "bottom",
       });
+      ScrollReveal().reveal("h3", { delay: 500, origin: "bottom" });
       ScrollReveal().reveal(".bold", { delay: 750, origin: "bottom" });
     </script>
     <script type="text/javascript">
