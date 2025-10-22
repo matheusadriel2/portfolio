@@ -21,9 +21,7 @@ async function loadProjects() {
 
     const repos = await response.json();
 
-    const filteredRepos = repos
-      .filter((repo) => !repo.fork)
-      .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+    const filteredRepos = repos.filter((repo) => !repo.fork).sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
 
     const limitedRepos = filteredRepos.slice(0, 6);
 
@@ -33,6 +31,8 @@ async function loadProjects() {
 
       const imagePath = `./assets/img/${repo.name}-banner.webp`;
       const defaultImage = "./assets/img/default-banner.webp";
+
+      const description = repo.description ? repo.description : "Sem descrição disponível.";
 
       const card = document.createElement("div");
       card.classList.add("card-item");
@@ -48,6 +48,7 @@ async function loadProjects() {
               <p class="badge ${languageClass}">${language}</p>
             </div>
             <h2 class="card-title">${repo.name}</h2>
+             <p class="card-description">${description}</p>
             <button class="card-button material-symbols-outlined">arrow_forward</button>
           </div>
         </a>

@@ -395,7 +395,17 @@
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  color: var(--primary-color);
   margin-bottom: 1rem;
+  line-height: 1.4;
+  max-height: 3.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .badges {
