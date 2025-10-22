@@ -31,7 +31,7 @@
 #home::after {
   content: "";
   position: absolute;
-  top: 5%;
+  top: 15%;
   left: 50%;
   width: 400px;
   height: 400px;
@@ -117,8 +117,7 @@
 }
 
 .autoRotateAnimation {
-  animation: autoRotateAnimation;
-  animation-timeline: view();
+  animation: autoRotateAnimation 10s linear infinite;
 }
 
 @keyframes autoRotateAnimation {
