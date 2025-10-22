@@ -1,3 +1,9 @@
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.transform = `translate(${e.clientX - cursor.offsetWidth / 2}px, ${e.clientY - cursor.offsetHeight / 2}px)`;
+});
+
 const username = "matheusadriel2";
 const projectsGrid = document.querySelector(".projects-grid");
 
