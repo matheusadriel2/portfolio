@@ -25,17 +25,34 @@ async function loadProjects() {
 
     const limitedRepos = filteredRepos.slice(0, 6);
 
-    limitedRepos.forEach((repo) => {
-      const language = repo.language || "Outros";
-      const languageClass = `${language.toLowerCase()}-badge`;
+    const reposWithLanguages = await Promise.all(
+      limitedRepos.map(async (repo) => {
+        const langResponse = await fetch(repo.languages_url);
+        const langs = await langResponse.json();
 
+        const topLanguages = Object.entries(langs)
+          .sort(([, a], [, b]) => b - a)
+          .slice(0, 3)
+          .map(([lang]) => lang);
+
+        return { ...repo, topLanguages };
+      })
+    );
+
+    reposWithLanguages.forEach((repo) => {
       const imagePath = `./assets/img/${repo.name}-banner.webp`;
       const defaultImage = "./assets/img/default-banner.webp";
-
-      const description = repo.description ? repo.description : "Sem descrição disponível.";
+      const description = repo.description || "Sem descrição disponível.";
 
       const card = document.createElement("div");
       card.classList.add("card-item");
+
+      const badgesHTML = repo.topLanguages
+        .map((lang) => {
+          const langClass = `${lang.toLowerCase()}-badge`;
+          return `<p class="badge ${langClass}">${lang}</p>`;
+        })
+        .join("");
 
       card.innerHTML = `
         <a href="${repo.html_url}" target="_blank" class="card-link" aria-label="Ver projeto ${repo.name} no GitHub">
@@ -45,10 +62,10 @@ async function loadProjects() {
                class="card-image" />
           <div class="card-content">
             <div class="badges">
-              <p class="badge ${languageClass}">${language}</p>
+              ${badgesHTML}
             </div>
             <h2 class="card-title">${repo.name}</h2>
-             <p class="card-description">${description}</p>
+            <p class="card-description">${description}</p>
             <button class="card-button material-symbols-outlined">arrow_forward</button>
           </div>
         </a>
