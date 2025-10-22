@@ -436,8 +436,9 @@
 }
 
 .card-link:hover .card-button {
-  color: #222;
-  background-color: var(--primary-color);
+  color: var(--background-color);
+  background-color: var(--highlight-color);
+  border-color: var(--highlight-color);
 }
 
 #contact {
