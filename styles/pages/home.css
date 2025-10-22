@@ -4,6 +4,22 @@
   justify-content: flex-end;
   padding: 0 9rem 0 9rem;
   margin: 0 0 10rem 0;
+  background-image: url(../../assets/img/background2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #000;
+  animation: fadeInBackground 3s ease-in forwards;
+}
+
+@keyframes fadeInBackground {
+  0% {
+    opacity: 0;
+    background-color: #000;
+  }
+  100% {
+    opacity: 1;
+    background-color: #000;
+  }
 }
 
 #home .container {
@@ -20,8 +36,8 @@
 #home .title {
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: absolute;
+  align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -30,7 +46,9 @@
 #home-title {
   display: flex;
   color: var(--primary-color);
+  font-family: 'Space Grotesk';
   font-size: 7rem;
+  font-weight: 900;
 }
 
 #home-subtitle {
