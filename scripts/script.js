@@ -1,7 +1,14 @@
 const cursor = document.querySelector(".cursor");
+let cursorVisible = false;
 
 document.addEventListener("mousemove", (e) => {
-  cursor.style.transform = `translate(${e.clientX - cursor.offsetWidth / 2}px, ${e.clientY - cursor.offsetHeight / 2}px)`;
+  cursor.style.left = `${e.clientX}px`;
+  cursor.style.top = `${e.clientY}px`;
+
+  if (!cursorVisible) {
+    cursor.style.opacity = "1";
+    cursorVisible = true;
+  }
 });
 
 const username = "matheusadriel2";
@@ -15,7 +22,7 @@ async function loadProjects() {
     const repos = await response.json();
 
     const filteredRepos = repos
-      .filter((repo) => !repo.fork) // ignora forks
+      .filter((repo) => !repo.fork)
       .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
 
     const limitedRepos = filteredRepos.slice(0, 6);
