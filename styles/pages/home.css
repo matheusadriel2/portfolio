@@ -16,7 +16,7 @@
 #home::after {
   content: "";
   position: absolute;
-  top: 8%;
+  top: 5%;
   left: 50%;
   width: 400px;
   height: 400px;
